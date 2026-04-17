@@ -1,0 +1,33 @@
+---
+description: Use vendored marketing and UI/UX Claude skills for all copy, CRO, SEO, and interface work on this project
+alwaysApply: true
+---
+
+# PJR Website — project skills
+
+This repo vendors full skill packs under `.agents/`. **Before** writing marketing copy, optimizing conversions, planning SEO, or designing UI, read the relevant `SKILL.md` from the appropriate pack.
+
+## Marketing ([coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills))
+
+- **Location:** `.agents/marketingskills/skills/<skill-name>/SKILL.md`
+- **Start here:** `.agents/marketingskills/skills/product-marketing-context/SKILL.md` — align work with `.agents/product-marketing-context.md` in this repo.
+- **Common tasks:** `copywriting`, `page-cro`, `form-cro`, `seo-audit`, `schema-markup`, `site-architecture`, `analytics-tracking`, `ai-seo`, `social-content`, etc.
+
+## UI / UX ([nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill))
+
+- **Primary:** `.agents/ui-ux-pro-max-skill/.claude/skills/ui-ux-pro-max/SKILL.md`
+- **Related:** `design-system`, `design`, `ui-styling`, `brand`, `banner-design`, `slides` under `.agents/ui-ux-pro-max-skill/.claude/skills/`
+
+## Project stack
+
+- Vite, vanilla HTML/JS, Tailwind CSS (`tailwind.config.js`, `src/style.css`).
+- Prefer accessible, healthcare-appropriate patterns (trust, clarity, WCAG-minded contrast) per UI skill checklists.
+
+## Updating skills
+
+To refresh vendored repos:
+
+```bash
+cd .agents/marketingskills && git pull
+cd ../ui-ux-pro-max-skill && git pull
+```
