@@ -10,3 +10,6 @@ workers_dev = true
 [assets]
 directory = "."
 binding = "ASSETS"
+# Default: auto-trailing-slash (extensionless .html URLs + folder indexes).
+# Do not duplicate this logic in cf-worker/index.js or redirects loop.
+html_handling = "auto-trailing-slash"
