@@ -1,0 +1,32 @@
+# Deploys the PJR site to Cloudflare Workers on every push to main.
+#
+# Required GitHub repo secrets (Settings → Secrets and variables → Actions):
+#   CLOUDFLARE_API_TOKEN  — Create at Cloudflare Dashboard → My Profile → API Tokens
+#                           (template: "Edit Cloudflare Workers" or custom with
+#                           Account.Workers Scripts:Edit and Account.Workers Routes:Edit)
+#   CLOUDFLARE_ACCOUNT_ID — Dashboard sidebar → your account → copy Account ID
+#
+# Without these secrets, the workflow fails and Cloudflare will not update.
+
+name: Deploy to Cloudflare Workers
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy Worker and static assets
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: "4.28.0"
