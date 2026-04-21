@@ -1,0 +1,9 @@
+# Extensionless URLs: /mission -> mission.html, /services/foo -> services/foo.html
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.html -f
+  RewriteRule ^ %{REQUEST_URI}.html [L]
+</IfModule>

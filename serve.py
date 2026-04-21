@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
-"""Serve the project root; maps select URLs to files in public/ (Vite public-dir convention)."""
+"""Serve the project root; maps select URLs to files in public/ (Vite public-dir convention).
+
+Also resolves extensionless paths (e.g. /mission -> mission.html, /services/foo -> services/foo.html).
+"""
 import http.server
 import os
 import socketserver
 import sys
+import urllib.parse
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 PUBLIC = os.path.join(ROOT, "public")
@@ -23,10 +27,28 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         super().__init__(*args, directory=ROOT, **kwargs)
 
     def translate_path(self, path):
-        clean = path.split("?", 1)[0]
-        fname = _PUBLIC_AT_ROOT.get(clean)
-        if fname:
-            return os.path.join(PUBLIC, fname)
+        parsed = urllib.parse.urlparse(path)
+        clean = urllib.parse.unquote(parsed.path.split("?", 1)[0].split("#", 1)[0])
+        if clean in _PUBLIC_AT_ROOT:
+            return os.path.join(PUBLIC, _PUBLIC_AT_ROOT[clean])
+
+        rel = clean.lstrip("/")
+        if ".." in rel.split("/"):
+            return super().translate_path(path)
+
+        fs_try = os.path.normpath(os.path.join(ROOT, rel))
+        root_norm = os.path.normpath(ROOT)
+        if fs_try != root_norm and not fs_try.startswith(root_norm + os.sep):
+            return super().translate_path(path)
+
+        if os.path.isfile(fs_try):
+            return fs_try
+        if os.path.isfile(fs_try + ".html"):
+            return fs_try + ".html"
+        if os.path.isdir(fs_try):
+            idx = os.path.join(fs_try, "index.html")
+            if os.path.isfile(idx):
+                return idx
         return super().translate_path(path)
 
 

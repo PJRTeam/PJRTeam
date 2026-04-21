@@ -1,0 +1,9 @@
+# Netlify (publish root = repo root): serve *.html at extensionless paths
+/services    /services/index.html    200
+/founder    /founder.html    200
+/mission    /mission.html    200
+/services/digital-governance    /services/digital-governance.html    200
+/services/websites-digital-foundations    /services/websites-digital-foundations.html    200
+/services/reputation-risk    /services/reputation-risk.html    200
+/services/partnership-support    /services/partnership-support.html    200
+/services/technology-security    /services/technology-security.html    200
