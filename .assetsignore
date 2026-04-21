@@ -1,0 +1,24 @@
+# Files and folders Wrangler must NOT upload as static assets (see Cloudflare Workers Static Assets).
+.git
+.agents
+.cursor
+node_modules
+.wrangler
+dist
+cf-worker
+*.local
+.env
+.env.*
+.dev.vars
+.gitignore
+.gitmodules
+*.md
+package.json
+package-lock.json
+postcss.config.js
+tailwind.config.js
+vite.config.js
+serve.py
+launch.sh
+_redirects
+.htaccess

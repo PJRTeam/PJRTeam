@@ -1,0 +1,12 @@
+# Cloudflare Workers + Static Assets for this HTML site.
+# Deploy: npx wrangler deploy   (or npm run deploy:cf)
+# If your Worker name in the dashboard differs, change `name` below to match it.
+name = "pjrteam"
+main = "cf-worker/index.js"
+compatibility_date = "2025-11-01"
+
+workers_dev = true
+
+[assets]
+directory = "."
+binding = "ASSETS"
