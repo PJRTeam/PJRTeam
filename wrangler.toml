@@ -14,3 +14,8 @@ binding = "ASSETS"
 # caused self-redirect loops). The Worker in cf-worker/index.js handles all
 # URL normalization: extensionless .html routing + trailing slash removal.
 html_handling = "none"
+# run_worker_first = true ensures the Worker runs for every request, even when
+# the URL matches an uploaded asset exactly (e.g. /index.html, /mission.html).
+# Without this, Cloudflare bypasses the Worker and serves the file from CDN
+# cache directly, so our .html → clean URL redirects never fire.
+run_worker_first = true
