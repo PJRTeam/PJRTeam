@@ -10,6 +10,7 @@ workers_dev = true
 [assets]
 directory = "."
 binding = "ASSETS"
-# Default: drop-trailing-slash (extensionless .html URLs + folder indexes).
-# Do not duplicate this logic in cf-worker/index.js or redirects loop.
-html_handling = "drop-trailing-slash"
+# html_handling = "none" disables Cloudflare's built-in redirect logic (which
+# caused self-redirect loops). The Worker in cf-worker/index.js handles all
+# URL normalization: extensionless .html routing + trailing slash removal.
+html_handling = "none"
