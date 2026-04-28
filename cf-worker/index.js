@@ -15,6 +15,16 @@ export default {
       return Response.redirect(canonical.href, 301);
     }
 
+    // 2. Strip .html extension and redirect to clean URL
+    //    /mission.html → /mission  |  /index.html → /  |  /services/index.html → /services
+    if (pathname.endsWith('.html')) {
+      const canonical = new URL(request.url);
+      let clean = pathname.slice(0, -5); // remove ".html"
+      if (clean.endsWith('/index')) clean = clean.slice(0, -6); // remove "/index"
+      canonical.pathname = clean || '/';
+      return Response.redirect(canonical.href, 301);
+    }
+
     // 2. Try the request as-is first (images, CSS, JS, exact file paths)
     const exactResponse = await env.ASSETS.fetch(request);
     if (exactResponse.status !== 404) return exactResponse;
