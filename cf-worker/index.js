@@ -25,6 +25,13 @@ export default {
       return Response.redirect(canonical.href, 301);
     }
 
+    // 3. Redirect bare /index paths → /  (e.g. /index → /, /services/index → /services)
+    if (pathname === '/index' || pathname.endsWith('/index')) {
+      const canonical = new URL(request.url);
+      canonical.pathname = pathname.slice(0, -6) || '/';
+      return Response.redirect(canonical.href, 301);
+    }
+
     // 2. Try the request as-is first (images, CSS, JS, exact file paths)
     const exactResponse = await env.ASSETS.fetch(request);
     if (exactResponse.status !== 404) return exactResponse;
