@@ -13,7 +13,7 @@ Individual skills are Markdown files: `SKILL.md` inside each skill folder. The m
 
 - `index.html` — Home
 - `mission.html` — Mission, vision, values
-- `founder.html` — Meet the founder (headshot: `public/founder-photo-new.jpg`, same URL path via `serve.py`)
+- `founder.html` — Meet the founder (headshot: `public/founder-photo.jpg`, same URL path via `serve.py`)
 
 ## Local development
 

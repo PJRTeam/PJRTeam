@@ -19,6 +19,7 @@ _PUBLIC_AT_ROOT = {
     "/pjr-logo.svg": "pjr-logo.svg",
     "/pjr-logo.png": "pjr-logo.png",
     "/founder-photo-new.jpg": "founder-photo-new.jpg",
+    "/founder-photo.jpg": "founder-photo.jpg",
 }
 
 
