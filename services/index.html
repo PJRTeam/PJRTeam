@@ -37,17 +37,17 @@
             colors: {
               brand: {
                 ink: "#1C1C1C",
-                slate: "#1C1C1C",
-                black: "#000000",
-                paper: "#FAFAFA",
-                stone: "#D8D3CB",
+                slate: "#454545",
+                black: "#1C1C1C",
+                paper: "#FFFFFF",
+                stone: "#F5F3F0",
                 sage: "#C4C7B5",
-                taupe: "#B8B2A6",
-                rose: "#B8B2A6",
+                taupe: "#E5E1DA",
+                rose: "#E5E1DA",
                 roseDeep: "#1C1C1C",
-                mist: "#F0EFED",
-                accent: "#000000",
-                accentMuted: "#E8E8E8",
+                mist: "#FAFAF9",
+                accent: "#1C1C1C",
+                accentMuted: "#F0EFEC",
               },
             },
             fontFamily: {
@@ -61,14 +61,15 @@
               ],
             },
             boxShadow: {
-              soft: "0 4px 24px -4px rgba(28, 28, 28, 0.08), 0 8px 16px -8px rgba(28, 28, 28, 0.06)",
-              card: "0 1px 3px rgba(28, 28, 28, 0.06), 0 8px 24px rgba(28, 28, 28, 0.06)",
+              soft:
+                "0 2px 20px -4px rgba(28, 28, 28, 0.06), 0 6px 16px -8px rgba(28, 28, 28, 0.04)",
+              card: "0 1px 2px rgba(28, 28, 28, 0.03), 0 8px 24px rgba(28, 28, 28, 0.05)",
             },
             backgroundImage: {
               "wash-light":
-                "radial-gradient(1200px 600px at 10% -10%, rgba(28, 28, 28, 0.04), transparent 55%), radial-gradient(900px 500px at 90% 0%, rgba(216, 211, 203, 0.45), transparent 52%)",
+                "radial-gradient(1200px 600px at 10% -10%, rgba(196, 199, 181, 0.14), transparent 55%), radial-gradient(900px 500px at 90% 0%, rgba(228, 225, 218, 0.45), transparent 52%), linear-gradient(180deg, #FFFFFF 0%, #FAFAF9 100%)",
               "wash-hero":
-                "radial-gradient(ellipse 80% 60% at 50% -20%, rgba(28, 28, 28, 0.06), transparent 60%), radial-gradient(ellipse 60% 40% at 100% 50%, rgba(196, 199, 181, 0.22), transparent 50%)",
+                "radial-gradient(ellipse 90% 70% at 50% -30%, rgba(196, 199, 181, 0.22), transparent 60%), radial-gradient(ellipse 50% 40% at 100% 20%, rgba(216, 211, 203, 0.28), transparent 50%), linear-gradient(180deg, #FFFFFF 0%, #F8F7F5 100%)",
             },
             transitionDuration: {
               DEFAULT: "220ms",
@@ -96,6 +97,11 @@
       body {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        background-color: #ffffff;
+        color: #1c1c1c;
+      }
+      main section:not([class*="bg-brand-ink"]) {
+        background-color: transparent;
       }
       main .text-flow > p,
       main .text-flow p {
@@ -118,14 +124,14 @@
       }
     </style>
   </head>
-  <body class="min-h-screen bg-wash-light">
+  <body class="min-h-screen bg-white">
     <a
       href="#main"
       class="absolute left-[-9999px] top-0 z-[100] rounded-lg bg-brand-paper px-4 py-2 text-sm font-medium text-brand-ink shadow-soft focus:left-4 focus:top-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-sage"
       >Skip to main content</a>
 
     <header
-      class="sticky top-0 z-50 border-b border-brand-taupe/20 bg-brand-paper/90 backdrop-blur-md"
+      class="sticky top-0 z-50 border-b border-brand-taupe/20 bg-white/95 backdrop-blur-md shadow-sm"
     >
       <div
         class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8"
@@ -179,30 +185,30 @@
             <div
               class="pointer-events-none absolute left-0 top-full z-50 pt-2 opacity-0 invisible transition duration-150 group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100"
             >
-              <div class="min-w-[16rem] rounded-xl border border-brand-taupe/30 bg-brand-paper py-2 shadow-card">
+              <div class="min-w-[16rem] rounded-xl border border-brand-taupe/20 bg-white py-2 shadow-card">
                 <a
-                  class="block px-4 py-2 text-sm font-medium text-brand-ink hover:bg-brand-stone/50 focus:bg-brand-stone/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
+                  class="block px-4 py-2 text-sm font-medium text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
                   href="/services/"
                   aria-current="page"
                   >All services overview</a>
                 <a
-                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-stone/50 focus:bg-brand-stone/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
+                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
                   href="/services/digital-governance"
                   >Digital governance &amp; social</a>
                 <a
-                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-stone/50 focus:bg-brand-stone/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
+                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
                   href="/services/websites-digital-foundations"
                   >Websites &amp; digital foundations</a>
                 <a
-                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-stone/50 focus:bg-brand-stone/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
+                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
                   href="/services/reputation-risk"
                   >Reputation &amp; risk</a>
                 <a
-                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-stone/50 focus:bg-brand-stone/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
+                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
                   href="/services/partnership-support"
                   >Partnership &amp; support</a>
                 <a
-                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-stone/50 focus:bg-brand-stone/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
+                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
                   href="/services/technology-security"
                   >Technology &amp; security</a>
               </div>
@@ -213,7 +219,7 @@
             href="/#testimonials"
             >Clients</a>
           <a
-            class="cursor-pointer rounded-full bg-black px-4 py-2 text-sm font-semibold text-white shadow-soft transition hover:bg-black/85 focus:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
+            class="cursor-pointer rounded-full bg-brand-ink px-4 py-2 text-sm font-semibold text-white shadow-soft transition hover:bg-brand-ink/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-ink focus-visible:ring-offset-2"
             href="/#contact"
             >Contact</a>
         </nav>
@@ -224,7 +230,7 @@
             aria-current="page"
             >Services</a>
           <a
-            class="cursor-pointer rounded-full bg-black px-3 py-2 text-sm font-semibold text-white transition hover:bg-black/85 focus:outline-none focus-visible:ring-2 focus-visible:ring-black"
+            class="cursor-pointer rounded-full bg-brand-ink px-3 py-2 text-sm font-semibold text-white transition hover:bg-brand-ink/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-ink"
             href="/#contact"
             >Contact</a>
         </div>
@@ -239,7 +245,7 @@
       >
         <div class="mx-auto max-w-6xl px-4 pb-14 pt-12 sm:px-6 sm:pb-16 sm:pt-16 lg:px-8 lg:pb-20 lg:pt-20">
           <p
-            class="mb-3 inline-flex items-center gap-2 rounded-full border border-brand-taupe/30 bg-brand-paper/95 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-sage shadow-sm"
+            class="mb-3 inline-flex items-center gap-2 rounded-full border border-brand-taupe/20 bg-white/95 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-sage shadow-sm"
           >
             <span class="h-1.5 w-1.5 rounded-full bg-brand-sage" aria-hidden="true"></span>
             What we do
@@ -258,11 +264,11 @@
         </div>
       </section>
 
-      <section class="border-t border-brand-taupe/20 bg-brand-stone/40" aria-labelledby="list-heading">
+      <section class="border-t border-brand-taupe/15 bg-brand-mist" aria-labelledby="list-heading">
         <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
           <h2 id="list-heading" class="sr-only">Service areas</h2>
           <ul class="grid gap-6 md:grid-cols-2">
-            <li class="flex h-full flex-col rounded-2xl border border-brand-taupe/30 bg-brand-paper p-6 shadow-card">
+            <li class="flex h-full flex-col rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card">
               <h3 class="font-display text-lg font-semibold text-brand-ink">
                 Digital governance &amp; social management
               </h3>
@@ -275,7 +281,7 @@
                 href="/services/digital-governance"
                 >Read more</a>
             </li>
-            <li class="flex h-full flex-col rounded-2xl border border-brand-taupe/30 bg-brand-paper p-6 shadow-card">
+            <li class="flex h-full flex-col rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card">
               <h3 class="font-display text-lg font-semibold text-brand-ink">
                 Rebrands, websites &amp; digital foundations
               </h3>
@@ -288,7 +294,7 @@
                 href="/services/websites-digital-foundations"
                 >Read more</a>
             </li>
-            <li class="flex h-full flex-col rounded-2xl border border-brand-taupe/30 bg-brand-paper p-6 shadow-card">
+            <li class="flex h-full flex-col rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card">
               <h3 class="font-display text-lg font-semibold text-brand-ink">
                 Reputation &amp; risk management
               </h3>
@@ -301,7 +307,7 @@
                 href="/services/reputation-risk"
                 >Read more</a>
             </li>
-            <li class="flex h-full flex-col rounded-2xl border border-brand-taupe/30 bg-brand-paper p-6 shadow-card">
+            <li class="flex h-full flex-col rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card">
               <h3 class="font-display text-lg font-semibold text-brand-ink">
                 Partnership &amp; ongoing support
               </h3>
@@ -314,7 +320,7 @@
                 href="/services/partnership-support"
                 >Read more</a>
             </li>
-            <li class="flex h-full flex-col rounded-2xl border border-brand-taupe/30 bg-brand-paper p-6 shadow-card md:col-span-2">
+            <li class="flex h-full flex-col rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card md:col-span-2">
               <h3 class="font-display text-lg font-semibold text-brand-ink">
                 Technology &amp; security oversight
               </h3>
@@ -330,7 +336,7 @@
           </ul>
           <p class="mt-10 text-center">
             <a
-              class="inline-flex cursor-pointer items-center justify-center rounded-full bg-black px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-black/85 focus:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
+              class="inline-flex cursor-pointer items-center justify-center rounded-full bg-brand-ink px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-brand-ink/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-ink focus-visible:ring-offset-2"
               href="/#contact"
               >Get in touch</a>
           </p>
