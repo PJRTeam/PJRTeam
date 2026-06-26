@@ -141,6 +141,25 @@
           animation: none;
         }
       }
+      .client-logo {
+        display: block;
+        height: 10.5rem;
+        width: auto;
+        max-width: min(26rem, 48vw);
+        object-fit: contain;
+      }
+      @media (min-width: 640px) {
+        .client-logo {
+          height: 12.5rem;
+          max-width: 30rem;
+        }
+      }
+      @media (min-width: 1024px) {
+        .client-logo {
+          height: 14.5rem;
+          max-width: 34rem;
+        }
+      }
     </style>
     <script type="application/ld+json">
       {
@@ -742,172 +761,172 @@
             </p>
           </div>
           <div
-            class="clients-marquee relative mt-12 w-full overflow-x-auto overflow-y-hidden bg-white [-ms-overflow-style:none] [scrollbar-width:none] sm:overflow-x-hidden [&::-webkit-scrollbar]:hidden"
+            class="clients-marquee relative mt-16 w-full overflow-x-auto overflow-y-hidden bg-white py-4 [-ms-overflow-style:none] [scrollbar-width:none] sm:mt-20 sm:overflow-x-hidden sm:py-6 [&::-webkit-scrollbar]:hidden"
             aria-label="Client logos"
           >
             <div class="clients-marquee-track flex w-max items-center">
-              <ul id="clients-logos" class="flex items-center gap-10 px-6 sm:gap-14 sm:px-8">
-                <li class="flex h-14 shrink-0 items-center sm:h-16">
+              <ul id="clients-logos" class="flex items-center gap-16 px-6 sm:gap-24 sm:px-10">
+                <li class="flex shrink-0 items-center">
                   <img
                     src="public/clients/merlyn-medical.png"
                     alt="Merlyn Medical"
-                    width="200"
-                    height="64"
-                    class="max-h-full w-auto max-w-[11rem] object-contain sm:max-w-[12rem]"
+                    width="400"
+                    height="200"
+                    class="client-logo"
                     loading="lazy"
                     decoding="async"
                   />
                 </li>
-                <li class="flex h-14 shrink-0 items-center sm:h-16">
+                <li class="flex shrink-0 items-center">
                   <img
                     src="public/clients/allied-medical.png"
                     alt="Allied Medical Products"
-                    width="200"
-                    height="64"
-                    class="max-h-full w-auto max-w-[11rem] object-contain sm:max-w-[12rem]"
+                    width="400"
+                    height="200"
+                    class="client-logo"
                     loading="lazy"
                     decoding="async"
                   />
                 </li>
-                <li class="flex h-14 shrink-0 items-center sm:h-16">
+                <li class="flex shrink-0 items-center">
                   <img
                     src="public/clients/pacific-skilled-healthcare.png"
                     alt="Pacific Skilled Healthcare"
-                    width="200"
-                    height="64"
-                    class="max-h-full w-auto max-w-[11rem] object-contain sm:max-w-[12rem]"
+                    width="400"
+                    height="200"
+                    class="client-logo"
                     loading="lazy"
                     decoding="async"
                   />
                 </li>
-                <li class="flex h-14 shrink-0 items-center sm:h-16">
+                <li class="flex shrink-0 items-center">
                   <img
                     src="public/clients/pearl-city-post-acute.png"
                     alt="Pearl City Post Acute"
-                    width="200"
-                    height="64"
-                    class="max-h-full w-auto max-w-[11rem] object-contain sm:max-w-[12rem]"
+                    width="400"
+                    height="200"
+                    class="client-logo"
                     loading="lazy"
                     decoding="async"
                   />
                 </li>
-                <li class="flex h-14 shrink-0 items-center sm:h-16">
+                <li class="flex shrink-0 items-center">
                   <img
                     src="public/clients/oahu-care-facility.png"
                     alt="Oahu Care Facility"
-                    width="200"
-                    height="64"
-                    class="max-h-full w-auto max-w-[11rem] object-contain sm:max-w-[12rem]"
+                    width="400"
+                    height="200"
+                    class="client-logo"
                     loading="lazy"
                     decoding="async"
                   />
                 </li>
-                <li class="flex h-14 shrink-0 items-center sm:h-16">
+                <li class="flex shrink-0 items-center">
                   <img
                     src="public/clients/kulana-malama.png"
                     alt="Kulana Malama"
-                    width="200"
-                    height="64"
-                    class="max-h-full w-auto max-w-[11rem] object-contain sm:max-w-[12rem]"
+                    width="400"
+                    height="200"
+                    class="client-logo"
                     loading="lazy"
                     decoding="async"
                   />
                 </li>
-                <li class="flex h-14 shrink-0 items-center sm:h-16">
+                <li class="flex shrink-0 items-center">
                   <img
                     src="public/clients/quality-improvement-consulting.png"
                     alt="Quality Improvement Consulting"
-                    width="200"
-                    height="64"
-                    class="max-h-full w-auto max-w-[11rem] object-contain sm:max-w-[12rem]"
+                    width="400"
+                    height="200"
+                    class="client-logo"
                     loading="lazy"
                     decoding="async"
                   />
                 </li>
-                <li class="flex h-14 shrink-0 items-center sm:h-16">
+                <li class="flex shrink-0 items-center">
                   <img
                     src="public/clients/taylered-therapy.png"
                     alt="Taylered Therapy For You"
-                    width="200"
-                    height="64"
-                    class="max-h-full w-auto max-w-[11rem] object-contain sm:max-w-[12rem]"
+                    width="400"
+                    height="200"
+                    class="client-logo"
                     loading="lazy"
                     decoding="async"
                   />
                 </li>
-                <li class="flex h-14 shrink-0 items-center sm:h-16">
+                <li class="flex shrink-0 items-center">
                   <img
                     src="public/clients/you-are-seen.png"
                     alt="You Are Seen"
-                    width="200"
-                    height="64"
-                    class="max-h-full w-auto max-w-[11rem] object-contain sm:max-w-[12rem]"
+                    width="400"
+                    height="200"
+                    class="client-logo"
                     loading="lazy"
                     decoding="async"
                   />
                 </li>
-                <li class="flex h-14 shrink-0 items-center sm:h-16">
+                <li class="flex shrink-0 items-center">
                   <img
                     src="public/clients/alliance-security.png"
                     alt="Alliance Security"
-                    width="200"
-                    height="64"
-                    class="max-h-full w-auto max-w-[11rem] object-contain sm:max-w-[12rem]"
+                    width="400"
+                    height="200"
+                    class="client-logo"
                     loading="lazy"
                     decoding="async"
                   />
                 </li>
-                <li class="flex h-14 shrink-0 items-center sm:h-16">
+                <li class="flex shrink-0 items-center">
                   <img
                     src="public/clients/protech.png"
                     alt="Protech"
-                    width="200"
-                    height="64"
-                    class="max-h-full w-auto max-w-[11rem] object-contain sm:max-w-[12rem]"
+                    width="400"
+                    height="200"
+                    class="client-logo"
                     loading="lazy"
                     decoding="async"
                   />
                 </li>
-                <li class="flex h-14 shrink-0 items-center sm:h-16">
+                <li class="flex shrink-0 items-center">
                   <img
                     src="public/clients/it-vendor-club.png"
                     alt="IT Vendor Club"
-                    width="200"
-                    height="64"
-                    class="max-h-full w-auto max-w-[11rem] object-contain sm:max-w-[12rem]"
+                    width="400"
+                    height="200"
+                    class="client-logo"
                     loading="lazy"
                     decoding="async"
                   />
                 </li>
-                <li class="flex h-14 shrink-0 items-center sm:h-16">
+                <li class="flex shrink-0 items-center">
                   <img
                     src="public/clients/apex.png"
                     alt="Apex Collaboration with Purpose"
-                    width="200"
-                    height="64"
-                    class="max-h-full w-auto max-w-[11rem] object-contain sm:max-w-[12rem]"
+                    width="400"
+                    height="200"
+                    class="client-logo"
                     loading="lazy"
                     decoding="async"
                   />
                 </li>
-                <li class="flex h-14 shrink-0 items-center sm:h-16">
+                <li class="flex shrink-0 items-center">
                   <img
                     src="public/clients/hidden-foods-co.png"
                     alt="Hidden Foods Co."
-                    width="200"
-                    height="64"
-                    class="max-h-full w-auto max-w-[11rem] object-contain sm:max-w-[12rem]"
+                    width="400"
+                    height="200"
+                    class="client-logo"
                     loading="lazy"
                     decoding="async"
                   />
                 </li>
-                <li class="flex h-14 shrink-0 items-center sm:h-16">
+                <li class="flex shrink-0 items-center">
                   <img
                     src="public/clients/daco-construction.png"
                     alt="DACO Construction"
-                    width="200"
-                    height="64"
-                    class="max-h-full w-auto max-w-[11rem] object-contain sm:max-w-[12rem]"
+                    width="400"
+                    height="200"
+                    class="client-logo"
                     loading="lazy"
                     decoding="async"
                   />
