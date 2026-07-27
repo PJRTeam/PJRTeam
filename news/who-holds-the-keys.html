@@ -13,6 +13,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16.png" />
     <link rel="apple-touch-icon" href="/public/favicon.png" />
+    <meta property="og:site_name" content="PJR Team" />
+    <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Who Holds the Keys to Your Front Door? | PJR Team" />
     <meta
@@ -129,13 +131,33 @@
         "publisher": {
           "@type": "Organization",
           "name": "PJR Team",
-          "url": "https://www.pjrteam.com/"
+          "url": "https://www.pjrteam.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.pjrteam.com/public/pjr-logo.png",
+            "width": 255,
+            "height": 153
+          }
         },
         "image": "https://www.pjrteam.com/public/news/who-holds-the-keys.png",
+        "about": ["Healthcare social media training", "HIPAA compliance", "Skilled nursing digital governance"],
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
         "mainEntityOfPage": {
           "@type": "WebPage",
           "@id": "https://www.pjrteam.com/news/who-holds-the-keys"
         }
+      }
+    </script>
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.pjrteam.com/"},
+          {"@type": "ListItem", "position": 2, "name": "News", "item": "https://www.pjrteam.com/news"},
+          {"@type": "ListItem", "position": 3, "name": "Who Holds the Keys to Your Front Door? Why Social Media Training Is Non-Negotiable in Healthcare", "item": "https://www.pjrteam.com/news/who-holds-the-keys"}
+        ]
       }
     </script>
   </head>
@@ -156,7 +178,7 @@
           class="group flex items-center rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-sage"
         >
           <img
-            src="../public/pjr-logo.png"
+            src="/public/pjr-logo.png"
             alt="PJR Team"
             width="255"
             height="153"
@@ -306,7 +328,7 @@
             </p>
             <figure class="mt-8 overflow-hidden rounded-2xl border border-brand-taupe/20 bg-brand-mist shadow-card">
               <img
-                src="../public/news/who-holds-the-keys.png"
+                src="/public/news/who-holds-the-keys.png"
                 alt="Healthcare professional managing social media, compliance, and scheduling panels — PJR Team"
                 width="1024"
                 height="576"
@@ -452,6 +474,15 @@
             Elite Dental Associates (2019).
           </p>
 
+          
+          <div class="mt-10 border-t border-brand-taupe/20 pt-8">
+            <p class="text-sm font-semibold uppercase tracking-wider text-brand-sage">Related services</p>
+            <ul class="mt-4 space-y-2 text-base text-brand-slate">
+              <li><a class="font-medium text-brand-ink underline-offset-4 hover:underline" href="/services/digital-governance">Digital governance &amp; social management</a></li>
+              <li><a class="font-medium text-brand-ink underline-offset-4 hover:underline" href="/services/reputation-risk">Reputation &amp; risk management</a></li>
+            </ul>
+          </div>
+
           <div class="mt-12 rounded-2xl border border-brand-taupe/20 bg-brand-mist p-8 shadow-card">
             <p class="text-sm font-semibold uppercase tracking-wider text-brand-sage">PJR Team</p>
             <p class="mt-2 text-base leading-relaxed text-brand-slate">
@@ -473,7 +504,7 @@
       >
         <div>
           <img
-            src="../public/pjr-logo.png"
+            src="/public/pjr-logo.png"
             alt="PJR Team"
             width="200"
             height="120"

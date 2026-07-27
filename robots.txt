@@ -1,0 +1,36 @@
+# PJR Team — https://www.pjrteam.com/
+# Allow search engines and AI answer engines that cite sources.
+
+User-agent: *
+Allow: /
+
+# OpenAI (ChatGPT search / citations)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google Gemini / AI Overviews training & grounding
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft Copilot (via Bing)
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://www.pjrteam.com/sitemap.xml
