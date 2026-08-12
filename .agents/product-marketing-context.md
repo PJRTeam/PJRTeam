@@ -46,6 +46,11 @@ _(Add when researched.)_
 - **Putty taupe** `#B8B2A6` — borders, dividers (`taupe`, legacy `rose`)
 - **Muted sage** `#C4C7B5` — links, eyebrow labels, highlights (`sage`)
 
+## Training product (`training.html`)
+
+- **Offer:** Digital Media Governance Standard (v1.0) for skilled nursing & senior living—tiered training (Frontline / Facility Leadership / Corporate) plus documentation toolkit; quarterly updates for subscribers.
+- **Primary CTA:** Complete the form (request the Standard or schedule facility training).
+
 ## Goals for the site
 
-Lead inquiries via contact form/email; establish authority in healthcare digital governance; support sales conversations with clear service mapping.
+Lead inquiries via contact form/email; establish authority in healthcare digital governance; support sales conversations with clear service mapping; capture Training Standard leads.

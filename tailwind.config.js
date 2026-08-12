@@ -4,7 +4,9 @@ export default {
     "./index.html",
     "./mission.html",
     "./founder.html",
+    "./training.html",
     "./services/**/*.html",
+    "./news/**/*.html",
     "./src/**/*.{js,ts}",
   ],
   theme: {

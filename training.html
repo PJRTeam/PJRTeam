@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Media Governance Training | Skilled Nursing &amp; Senior Living — PJR Team</title>
+    <meta
+      name="description"
+      content="Version 1.0 of the Digital Media Governance Standard for skilled nursing and senior living—training and documentation that closes the gap between phones in resident rooms and outdated policy manuals."
+    />
+    <link rel="canonical" href="https://www.pjrteam.com/training" />
+    <link rel="icon" type="image/svg+xml" href="/public/pjr-logo.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16.png" />
+    <link rel="apple-touch-icon" href="/public/favicon.png" />
+    <meta property="og:site_name" content="PJR Team" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Digital Media Governance Training | PJR Team" />
+    <meta
+      property="og:description"
+      content="The training and documentation standard for skilled nursing and senior living digital media governance. Request the Standard or schedule facility training."
+    />
+    <meta property="og:url" content="https://www.pjrteam.com/training" />
+    <meta property="og:image" content="https://www.pjrteam.com/public/og/og-home.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://www.pjrteam.com/public/og/og-home.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                ink: "#1C1C1C",
+                slate: "#454545",
+                black: "#1C1C1C",
+                paper: "#FFFFFF",
+                stone: "#F5F3F0",
+                sage: "#C4C7B5",
+                taupe: "#E5E1DA",
+                rose: "#E5E1DA",
+                roseDeep: "#1C1C1C",
+                mist: "#FAFAF9",
+                accent: "#1C1C1C",
+                accentMuted: "#F0EFEC",
+              },
+            },
+            fontFamily: {
+              display: ["Fraunces", "Georgia", "serif"],
+              sans: [
+                "Plus Jakarta Sans",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif",
+              ],
+            },
+            boxShadow: {
+              soft:
+                "0 2px 20px -4px rgba(28, 28, 28, 0.06), 0 6px 16px -8px rgba(28, 28, 28, 0.04)",
+              card: "0 1px 2px rgba(28, 28, 28, 0.03), 0 8px 24px rgba(28, 28, 28, 0.05)",
+            },
+            backgroundImage: {
+              "wash-light":
+                "radial-gradient(1200px 600px at 10% -10%, rgba(196, 199, 181, 0.14), transparent 55%), radial-gradient(900px 500px at 90% 0%, rgba(228, 225, 218, 0.45), transparent 52%), linear-gradient(180deg, #FFFFFF 0%, #FAFAF9 100%)",
+              "wash-hero":
+                "radial-gradient(ellipse 90% 70% at 50% -30%, rgba(196, 199, 181, 0.22), transparent 60%), radial-gradient(ellipse 50% 40% at 100% 20%, rgba(216, 211, 203, 0.28), transparent 50%), linear-gradient(180deg, #FFFFFF 0%, #F8F7F5 100%)",
+            },
+            transitionDuration: {
+              DEFAULT: "220ms",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #ffffff;
+        color: #1c1c1c;
+      }
+      main section:not([class*="bg-brand-ink"]) {
+        background-color: transparent;
+      }
+      main .text-flow > p,
+      main .text-flow p {
+        max-width: 65ch;
+      }
+      main .text-flow a:not([class*="inline-flex"]):not([class*="rounded-full"]) {
+        color: #c4c7b5;
+        text-decoration: underline;
+        text-underline-offset: 0.2em;
+        text-decoration-thickness: 1px;
+        transition: color 180ms ease;
+      }
+      main .text-flow a:not([class*="inline-flex"]):not([class*="rounded-full"]):hover {
+        color: #1c1c1c;
+      }
+      @supports (text-wrap: balance) {
+        .text-balance {
+          text-wrap: balance;
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "name": "Digital Media Governance Training | PJR Team",
+            "url": "https://www.pjrteam.com/training",
+            "description": "The Digital Media Governance Standard for skilled nursing and senior living—training and documentation that closes the gap between staff phones and outdated policy manuals.",
+            "isPartOf": {
+              "@type": "WebSite",
+              "name": "PJR Team",
+              "url": "https://www.pjrteam.com/"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.pjrteam.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Training", "item": "https://www.pjrteam.com/training"}
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="min-h-screen bg-white">
+    <a
+      href="#main"
+      class="absolute left-[-9999px] top-0 z-[100] rounded-lg bg-brand-paper px-4 py-2 text-sm font-medium text-brand-ink shadow-soft focus:left-4 focus:top-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-sage"
+      >Skip to main content</a>
+
+    <header
+      class="sticky top-0 z-50 border-b border-brand-taupe/20 bg-white/95 backdrop-blur-md shadow-sm"
+    >
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8"
+      >
+        <a
+          href="/"
+          class="group flex items-center rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-sage"
+        >
+          <img
+            src="public/pjr-logo.png"
+            alt="PJR Team"
+            width="255"
+            height="153"
+            class="h-12 w-auto max-w-[min(100%,300px)] object-contain object-left opacity-100 transition-opacity group-hover:opacity-90 sm:h-14 sm:max-w-[340px]"
+            decoding="async"
+          />
+        </a>
+        <nav aria-label="Primary" class="hidden flex-wrap items-center justify-end gap-x-6 gap-y-2 md:flex lg:gap-x-8">
+          <a
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            href="/#about"
+            >About</a>
+          <a
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            href="/founder"
+            >Founder</a>
+          <a
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            href="/mission"
+            >Mission</a>
+          <div class="group relative">
+            <a
+              class="inline-flex cursor-pointer items-center gap-0.5 rounded text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-sage focus-visible:ring-offset-2"
+              href="/services/"
+            >
+              Services
+              <svg
+                class="h-4 w-4 shrink-0 text-brand-ink/60 transition-transform group-hover:rotate-180 group-focus-within:rotate-180"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+            <div
+              class="pointer-events-none absolute left-0 top-full z-50 pt-2 opacity-0 invisible transition duration-150 group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100"
+            >
+              <div class="min-w-[16rem] rounded-xl border border-brand-taupe/20 bg-white py-2 shadow-card">
+                <a
+                  class="block px-4 py-2 text-sm font-medium text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
+                  href="/services/"
+                  >All services overview</a>
+                <a
+                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
+                  href="/services/digital-governance"
+                  >Digital governance &amp; social</a>
+                <a
+                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
+                  href="/services/websites-digital-foundations"
+                  >Websites &amp; digital foundations</a>
+                <a
+                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
+                  href="/services/reputation-risk"
+                  >Reputation &amp; risk</a>
+                <a
+                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
+                  href="/services/partnership-support"
+                  >Partnership &amp; support</a>
+                <a
+                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
+                  href="/services/technology-security"
+                  >Technology &amp; security</a>
+              </div>
+            </div>
+          </div>
+          <a
+            class="cursor-pointer text-sm font-semibold text-brand-ink"
+            href="/training"
+            aria-current="page"
+            >Training</a>
+          <a
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            href="/news/"
+            >News</a>
+          <a
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            href="/#testimonials"
+            >Clients</a>
+          <a
+            class="cursor-pointer rounded-full bg-brand-ink px-4 py-2 text-sm font-semibold text-white shadow-soft transition hover:bg-brand-ink/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-ink focus-visible:ring-offset-2"
+            href="/#contact"
+            >Contact</a>
+        </nav>
+        <div class="flex flex-wrap items-center justify-end gap-x-2 gap-y-1 md:hidden">
+          <a
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            href="/founder"
+            >Founder</a>
+          <a
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            href="/mission"
+            >Mission</a>
+          <a
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            href="/services/"
+            >Services</a>
+          <a
+            class="cursor-pointer text-sm font-semibold text-brand-ink"
+            href="/training"
+            aria-current="page"
+            >Training</a>
+          <a
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            href="/news/"
+            >News</a>
+          <a
+            class="cursor-pointer rounded-full bg-brand-ink px-3 py-2 text-sm font-semibold text-white transition hover:bg-brand-ink/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-ink"
+            href="/#contact"
+            >Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section
+        id="top"
+        class="relative overflow-hidden bg-wash-hero"
+        aria-labelledby="page-heading"
+      >
+        <div class="mx-auto max-w-6xl px-4 pb-14 pt-12 sm:px-6 sm:pb-16 sm:pt-16 lg:px-8 lg:pb-20 lg:pt-20">
+          <h1
+            id="page-heading"
+            class="text-balance font-display text-3xl font-semibold leading-tight tracking-tight text-brand-ink sm:text-4xl lg:max-w-4xl lg:text-5xl"
+          >
+            The Digital Media Governance Standard for Skilled Nursing &amp; Senior Living
+          </h1>
+          <p class="text-flow mt-5 max-w-2xl text-lg leading-relaxed text-brand-slate">
+            Your staff carry phones into resident rooms. Your policy manual was written before that
+            was true. Version 1.0 is the training and documentation standard that closes the gap.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a
+              href="#request"
+              class="inline-flex cursor-pointer items-center justify-center rounded-full bg-brand-ink px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-brand-ink/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-ink focus-visible:ring-offset-2"
+              data-interest="Request the Standard"
+              >Request the Standard</a>
+            <a
+              href="#request"
+              class="inline-flex cursor-pointer items-center justify-center rounded-full border border-brand-taupe/40 bg-brand-paper px-6 py-3 text-sm font-semibold text-brand-ink transition hover:border-brand-sage hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-sage"
+              data-interest="Schedule a Facility Training"
+              >Schedule a Facility Training</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="h-px bg-gradient-to-r from-transparent via-brand-taupe/25 to-transparent" aria-hidden="true"></div>
+
+      <section class="bg-white" aria-labelledby="problem-heading">
+        <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+          <div class="max-w-3xl text-flow">
+            <h2
+              id="problem-heading"
+              class="text-balance font-display text-3xl font-semibold tracking-tight text-brand-ink sm:text-4xl"
+            >
+              The problem, stated plainly
+            </h2>
+            <p class="mt-6 text-lg leading-relaxed text-brand-slate">
+              Since 2016, surveyors have been directed to treat demeaning photographs and recordings
+              of residents as potential abuse. That is not a marketing citation. It follows the same
+              path as any other abuse allegation — reporting timelines, investigation, potential
+              immediate jeopardy.
+            </p>
+            <p class="mt-5 text-lg leading-relaxed text-brand-slate">
+              Most facilities have a social media policy. Almost none have a training record they
+              could hand a surveyor.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-t border-brand-taupe/15 bg-brand-mist" aria-labelledby="covers-heading">
+        <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+          <div class="max-w-3xl">
+            <h2
+              id="covers-heading"
+              class="text-balance font-display text-3xl font-semibold tracking-tight text-brand-ink sm:text-4xl"
+            >
+              What the Standard covers
+            </h2>
+            <p class="mt-4 text-lg leading-relaxed text-brand-slate">
+              Three tiers, because exposure is not the same at every level.
+            </p>
+          </div>
+          <ol class="mt-10 max-w-3xl space-y-10">
+            <li>
+              <h3 class="font-display text-xl font-semibold text-brand-ink sm:text-2xl">
+                Frontline — 45 minutes
+              </h3>
+              <p class="mt-3 leading-relaxed text-brand-slate">
+                Every staff member who carries a phone into the building. The Background Scan,
+                consent, personal accounts, and what to do in the first hour after a bad post.
+              </p>
+            </li>
+            <li>
+              <h3 class="font-display text-xl font-semibold text-brand-ink sm:text-2xl">
+                Facility Leadership — 90 minutes
+              </h3>
+              <p class="mt-3 leading-relaxed text-brand-slate">
+                Account ownership and access, the consent program, responding to reviews without
+                disclosing PHI, incident documentation, and the approval chain.
+              </p>
+            </li>
+            <li>
+              <h3 class="font-display text-xl font-semibold text-brand-ink sm:text-2xl">
+                Corporate &amp; Multi-Facility Marketing — half day
+              </h3>
+              <p class="mt-3 leading-relaxed text-brand-slate">
+                Portfolio account governance, rollout and training records at scale, vendor
+                contracts, and the crisis playbook.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="border-t border-brand-taupe/15 bg-white" aria-labelledby="keeps-heading">
+        <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+          <div class="max-w-3xl text-flow">
+            <h2
+              id="keeps-heading"
+              class="text-balance font-display text-3xl font-semibold tracking-tight text-brand-ink sm:text-4xl"
+            >
+              What the facility keeps
+            </h2>
+            <p class="mt-6 text-lg leading-relaxed text-brand-slate">
+              Consent forms. Revocation log. Background Scan card for the breakroom. Access
+              inventory. Offboarding checklist. Review response decision tree. Incident report form.
+              Training attestation log. Drop-in policy language.
+            </p>
+            <p class="mt-6 text-lg leading-relaxed text-brand-ink">
+              The training is the delivery mechanism. The documentation is the asset.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-t border-brand-taupe/15 bg-brand-mist" aria-labelledby="quarterly-heading">
+        <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+          <div class="max-w-3xl text-flow">
+            <h2
+              id="quarterly-heading"
+              class="text-balance font-display text-3xl font-semibold tracking-tight text-brand-ink sm:text-4xl"
+            >
+              Why quarterly
+            </h2>
+            <p class="mt-6 text-lg leading-relaxed text-brand-slate">
+              Compliance training is annual because the regulations move slowly. Platforms do not.
+              Google changes profile rules, Meta changes admin permissions, and a policy written last
+              August is quietly wrong by March.
+            </p>
+            <p class="mt-5 text-lg leading-relaxed text-brand-slate">
+              Standard subscribers receive a quarterly bulletin and an updated toolkit. The Standard
+              is versioned and dated, so a facility can state exactly which version it trained
+              against.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-t border-brand-taupe/15 bg-white" aria-labelledby="built-heading">
+        <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+          <div class="max-w-3xl text-flow">
+            <h2
+              id="built-heading"
+              class="text-balance font-display text-3xl font-semibold tracking-tight text-brand-ink sm:text-4xl"
+            >
+              Who built it
+            </h2>
+            <p class="mt-6 text-lg leading-relaxed text-brand-slate">
+              PJR Team has spent roughly eight years inside skilled nursing digital operations —
+              profile ownership, HIPAA-compliant social media, review governance, and staff training.
+              Published in Provider Magazine (AHCA/NCAL) and McKnight’s Long-Term Care News.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-t border-brand-taupe/15 bg-brand-mist" aria-labelledby="formats-heading">
+        <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+          <div class="max-w-3xl text-flow">
+            <h2
+              id="formats-heading"
+              class="text-balance font-display text-3xl font-semibold tracking-tight text-brand-ink sm:text-4xl"
+            >
+              Formats
+            </h2>
+            <p class="mt-6 text-lg leading-relaxed text-brand-slate">
+              On-site single facility · On-site portfolio rollout · Virtual by tier · Train-the-trainer
+              license · Annual Standard subscription
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="request"
+        class="border-t border-brand-taupe/15 bg-white"
+        aria-labelledby="request-heading"
+      >
+        <div class="mx-auto grid max-w-6xl gap-12 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:py-24">
+          <div class="text-flow">
+            <h2
+              id="request-heading"
+              class="text-balance font-display text-3xl font-semibold tracking-tight text-brand-ink sm:text-4xl"
+            >
+              Book a 20-minute call
+            </h2>
+            <p class="mt-4 leading-relaxed text-brand-slate">
+              Complete the form to request the Standard or schedule facility training.
+            </p>
+          </div>
+          <div class="rounded-2xl border border-brand-taupe/20 bg-brand-mist p-6 shadow-card sm:p-8">
+            <form
+              id="training-form"
+              class="space-y-5"
+              action="https://formspree.io/f/xpjrteam"
+              method="POST"
+              data-formspree-endpoint="https://formspree.io/f/xpjrteam"
+              novalidate
+            >
+              <input type="hidden" name="_subject" value="Training inquiry — Digital Media Governance Standard" />
+              <input type="hidden" name="formSource" value="training" />
+              <div>
+                <label for="interest" class="block text-sm font-medium text-brand-ink"
+                  >I’m interested in <span class="text-brand-sage" aria-hidden="true">*</span></label>
+                <select
+                  id="interest"
+                  name="interest"
+                  required
+                  class="mt-1.5 w-full rounded-xl border border-brand-taupe/20 bg-white px-3 py-2.5 text-sm text-brand-ink shadow-sm transition focus:border-brand-sage focus:outline-none focus:ring-2 focus:ring-brand-sage/35"
+                >
+                  <option value="">Select one</option>
+                  <option value="Request the Standard">Request the Standard</option>
+                  <option value="Schedule a Facility Training">Schedule a Facility Training</option>
+                  <option value="Book a 20-minute call">Book a 20-minute call</option>
+                </select>
+              </div>
+              <div>
+                <label for="name" class="block text-sm font-medium text-brand-ink"
+                  >Name <span class="text-brand-sage" aria-hidden="true">*</span></label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                  class="mt-1.5 w-full rounded-xl border border-brand-taupe/20 bg-white px-3 py-2.5 text-sm text-brand-ink shadow-sm transition placeholder:text-brand-slate/50 focus:border-brand-sage focus:outline-none focus:ring-2 focus:ring-brand-sage/35"
+                  placeholder="Jordan Lee"
+                />
+              </div>
+              <div>
+                <label for="company" class="block text-sm font-medium text-brand-ink"
+                  >Company <span class="text-brand-sage" aria-hidden="true">*</span></label>
+                <input
+                  id="company"
+                  name="company"
+                  type="text"
+                  autocomplete="organization"
+                  required
+                  class="mt-1.5 w-full rounded-xl border border-brand-taupe/20 bg-white px-3 py-2.5 text-sm text-brand-ink shadow-sm transition placeholder:text-brand-slate/50 focus:border-brand-sage focus:outline-none focus:ring-2 focus:ring-brand-sage/35"
+                  placeholder="Your organization name"
+                />
+              </div>
+              <div>
+                <label for="orgSize" class="block text-sm font-medium text-brand-ink"
+                  >Organization size <span class="text-brand-sage" aria-hidden="true">*</span></label>
+                <select
+                  id="orgSize"
+                  name="organizationSize"
+                  required
+                  class="mt-1.5 w-full rounded-xl border border-brand-taupe/20 bg-white px-3 py-2.5 text-sm text-brand-ink shadow-sm transition focus:border-brand-sage focus:outline-none focus:ring-2 focus:ring-brand-sage/35"
+                >
+                  <option value="">Select one</option>
+                  <option value="Single facility">Single facility</option>
+                  <option value="2–5 facilities">2–5 facilities</option>
+                  <option value="6–20 facilities">6–20 facilities</option>
+                  <option value="21+ facilities">21+ facilities</option>
+                  <option value="Corporate / multi-state">Corporate / multi-state</option>
+                </select>
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-brand-ink"
+                  >Email <span class="text-brand-sage" aria-hidden="true">*</span></label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  class="mt-1.5 w-full rounded-xl border border-brand-taupe/20 bg-white px-3 py-2.5 text-sm text-brand-ink shadow-sm transition placeholder:text-brand-slate/50 focus:border-brand-sage focus:outline-none focus:ring-2 focus:ring-brand-sage/35"
+                  placeholder="you@organization.com"
+                />
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-medium text-brand-ink"
+                  >Phone <span class="text-brand-sage" aria-hidden="true">*</span></label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  autocomplete="tel"
+                  required
+                  class="mt-1.5 w-full rounded-xl border border-brand-taupe/20 bg-white px-3 py-2.5 text-sm text-brand-ink shadow-sm transition placeholder:text-brand-slate/50 focus:border-brand-sage focus:outline-none focus:ring-2 focus:ring-brand-sage/35"
+                  placeholder="(555) 555-5555"
+                />
+              </div>
+              <p id="form-status" class="hidden text-sm" role="status" aria-live="polite"></p>
+              <button
+                type="submit"
+                class="w-full cursor-pointer rounded-full bg-brand-ink px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-brand-ink/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-ink focus-visible:ring-offset-2 sm:w-auto"
+              >
+                Book a 20-minute call
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-brand-taupe/25 bg-brand-ink text-white">
+      <div
+        class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-10 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8"
+      >
+        <div>
+          <img
+            src="public/pjr-logo.png"
+            alt="PJR Team"
+            width="255"
+            height="153"
+            class="h-10 w-auto max-w-[min(100%,220px)] object-contain object-left brightness-0 invert sm:h-11 sm:max-w-[240px]"
+            loading="lazy"
+            decoding="async"
+          />
+          <p class="mt-1 text-sm text-white/75">PO Box 767 · Dana Point, CA 92629</p>
+          <p class="text-sm text-white/75">
+            <a
+              class="cursor-pointer text-brand-sage underline-offset-4 transition hover:text-white hover:underline"
+              href="mailto:ContactUs@pjrteam.com"
+              >ContactUs@pjrteam.com</a>
+          </p>
+          <nav class="mt-3 text-sm text-white/85" aria-label="Social media">
+            <span class="font-medium text-white">Connect</span>
+            <span class="mx-2 text-white/40" aria-hidden="true">·</span>
+            <a
+              class="text-brand-sage underline-offset-4 transition hover:text-white hover:underline"
+              href="https://maps.app.goo.gl/ZtnFLLku6xrULm7c7"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Google Business</a>
+            <span class="mx-2 text-white/40" aria-hidden="true">·</span>
+            <a
+              class="text-brand-sage underline-offset-4 transition hover:text-white hover:underline"
+              href="https://www.instagram.com/pjrteam_/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a>
+            <span class="mx-2 text-white/40" aria-hidden="true">·</span>
+            <a
+              class="text-brand-sage underline-offset-4 transition hover:text-white hover:underline"
+              href="https://www.linkedin.com/company/pjrteam1/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a>
+          </nav>
+          <p class="mt-3 text-sm text-white/60">
+            <a class="text-brand-sage underline-offset-4 transition hover:text-white hover:underline" href="/">Home</a>
+            <span class="mx-2 text-white/40" aria-hidden="true">·</span>
+            <a class="text-brand-sage underline-offset-4 transition hover:text-white hover:underline" href="/founder">Founder</a>
+            <span class="mx-2 text-white/40" aria-hidden="true">·</span>
+            <a class="text-brand-sage underline-offset-4 transition hover:text-white hover:underline" href="/mission">Mission &amp; values</a>
+            <span class="mx-2 text-white/40" aria-hidden="true">·</span>
+            <a class="text-brand-sage underline-offset-4 transition hover:text-white hover:underline" href="/services/">Services</a>
+            <span class="mx-2 text-white/40" aria-hidden="true">·</span>
+            <a class="text-brand-sage underline-offset-4 transition hover:text-white hover:underline" href="/training">Training</a>
+            <span class="mx-2 text-white/40" aria-hidden="true">·</span>
+            <a class="text-brand-sage underline-offset-4 transition hover:text-white hover:underline" href="/news/">News</a>
+          </p>
+        </div>
+        <p class="text-sm text-white/60">
+          © <span id="year">2026</span> PJR Team. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var yearEl = document.getElementById("year");
+        if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+        var interestSelect = document.getElementById("interest");
+        document.querySelectorAll("a[data-interest]").forEach(function (link) {
+          link.addEventListener("click", function () {
+            if (interestSelect) {
+              interestSelect.value = link.getAttribute("data-interest") || "";
+            }
+          });
+        });
+
+        var form = document.getElementById("training-form");
+        var formStatus = document.getElementById("form-status");
+        var submitBtn = form ? form.querySelector('button[type="submit"]') : null;
+
+        if (form) {
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            var fd = new FormData(form);
+            var name = (fd.get("name") || "").toString().trim();
+            var company = (fd.get("company") || "").toString().trim();
+            var orgSize = (fd.get("organizationSize") || "").toString().trim();
+            var email = (fd.get("email") || "").toString().trim();
+            var phone = (fd.get("phone") || "").toString().trim();
+            var interest = (fd.get("interest") || "").toString().trim();
+
+            if (!name || !company || !orgSize || !email || !phone || !interest) {
+              if (formStatus) {
+                formStatus.textContent = "Please complete all required fields.";
+                formStatus.classList.remove("hidden", "text-emerald-800");
+                formStatus.classList.add("text-red-800");
+              }
+              return;
+            }
+
+            var endpoint =
+              form.getAttribute("data-formspree-endpoint") ||
+              form.getAttribute("action") ||
+              "";
+            if (!endpoint) {
+              if (formStatus) {
+                formStatus.textContent = "Form is not configured. Please email ContactUs@pjrteam.com.";
+                formStatus.classList.remove("hidden", "text-emerald-800");
+                formStatus.classList.add("text-red-800");
+              }
+              return;
+            }
+
+            if (submitBtn) {
+              submitBtn.disabled = true;
+              submitBtn.textContent = "Sending…";
+            }
+
+            fetch(endpoint, {
+              method: "POST",
+              body: fd,
+              headers: { Accept: "application/json" },
+            })
+              .then(function (res) {
+                if (!res.ok) throw new Error("submit failed");
+                form.reset();
+                if (formStatus) {
+                  formStatus.textContent =
+                    "Thank you. We received your request and will reply within one business day.";
+                  formStatus.classList.remove("hidden", "text-red-800");
+                  formStatus.classList.add("text-emerald-800");
+                }
+              })
+              .catch(function () {
+                if (formStatus) {
+                  formStatus.textContent =
+                    "Something went wrong. Please email ContactUs@pjrteam.com or try again.";
+                  formStatus.classList.remove("hidden", "text-emerald-800");
+                  formStatus.classList.add("text-red-800");
+                }
+              })
+              .finally(function () {
+                if (submitBtn) {
+                  submitBtn.disabled = false;
+                  submitBtn.textContent = "Book a 20-minute call";
+                }
+              });
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
