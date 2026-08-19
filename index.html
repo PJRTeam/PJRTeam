@@ -50,6 +50,8 @@
                 paper: "#FFFFFF",
                 stone: "#F5F3F0",
                 sage: "#C4C7B5",
+                blue: "#0B5E75",
+                blueMist: "#C0E5E3",
                 taupe: "#E5E1DA",
                 rose: "#E5E1DA",
                 roseDeep: "#1C1C1C",
@@ -75,9 +77,9 @@
             },
             backgroundImage: {
               "wash-light":
-                "radial-gradient(1200px 600px at 10% -10%, rgba(196, 199, 181, 0.14), transparent 55%), radial-gradient(900px 500px at 90% 0%, rgba(228, 225, 218, 0.45), transparent 52%), linear-gradient(180deg, #FFFFFF 0%, #FAFAF9 100%)",
+                "radial-gradient(1200px 600px at 10% -10%, rgba(11, 94, 117, 0.08), transparent 55%), radial-gradient(900px 500px at 90% 0%, rgba(192, 229, 227, 0.38), transparent 52%), linear-gradient(180deg, #FFFFFF 0%, #FAFAF9 100%)",
               "wash-hero":
-                "radial-gradient(ellipse 90% 70% at 50% -30%, rgba(196, 199, 181, 0.22), transparent 60%), radial-gradient(ellipse 50% 40% at 100% 20%, rgba(216, 211, 203, 0.28), transparent 50%), linear-gradient(180deg, #FFFFFF 0%, #F8F7F5 100%)",
+                "radial-gradient(ellipse 90% 70% at 50% -30%, rgba(11, 94, 117, 0.10), transparent 60%), radial-gradient(ellipse 50% 40% at 100% 20%, rgba(192, 229, 227, 0.28), transparent 50%), linear-gradient(180deg, #FFFFFF 0%, #F8F7F5 100%)",
             },
             transitionDuration: {
               DEFAULT: "220ms",
@@ -116,7 +118,7 @@
         max-width: 65ch;
       }
       main .text-flow a:not([class*="inline-flex"]):not([class*="rounded-full"]) {
-        color: #c4c7b5;
+        color: #0B5E75;
         text-decoration: underline;
         text-underline-offset: 0.2em;
         text-decoration-thickness: 1px;
@@ -336,7 +338,7 @@
   <body class="min-h-screen bg-white">
     <a
       href="#main"
-      class="absolute left-[-9999px] top-0 z-[100] rounded-lg bg-brand-paper px-4 py-2 text-sm font-medium text-brand-ink shadow-soft focus:left-4 focus:top-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-sage"
+      class="absolute left-[-9999px] top-0 z-[100] rounded-lg bg-brand-paper px-4 py-2 text-sm font-medium text-brand-ink shadow-soft focus:left-4 focus:top-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue"
       >Skip to main content</a>
 
     <header
@@ -347,7 +349,7 @@
       >
         <a
           href="/#top"
-          class="group flex items-center rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-sage"
+          class="group flex items-center rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue"
         >
           <img
             src="public/pjr-logo.png"
@@ -360,20 +362,20 @@
         </a>
         <nav aria-label="Primary" class="hidden flex-wrap items-center justify-end gap-x-6 gap-y-2 md:flex lg:gap-x-8">
           <a
-            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
             href="#about"
             >About</a>
           <a
-            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
             href="/founder"
             >Founder</a>
           <a
-            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
             href="/mission"
             >Mission</a>
           <div class="group relative">
             <a
-              class="inline-flex cursor-pointer items-center gap-0.5 rounded text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-sage focus-visible:ring-offset-2"
+              class="inline-flex cursor-pointer items-center gap-0.5 rounded text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2"
               href="/services/"
             >
               Services
@@ -395,46 +397,46 @@
             >
               <div class="min-w-[16rem] rounded-xl border border-brand-taupe/20 bg-white py-2 shadow-card">
                 <a
-                  class="block px-4 py-2 text-sm font-medium text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
+                  class="block px-4 py-2 text-sm font-medium text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-blue"
                   href="/services/"
                   >All services overview</a>
                 <a
-                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
+                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-blue"
                   href="/services/digital-governance"
                   >Digital governance &amp; social</a>
                 <a
-                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
+                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-blue"
                   href="/services/websites-digital-foundations"
                   >Websites &amp; digital foundations</a>
                 <a
-                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
+                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-blue"
                   href="/services/reputation-risk"
                   >Reputation &amp; risk</a>
                 <a
-                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
+                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-blue"
                   href="/services/partnership-support"
                   >Partnership &amp; support</a>
                 <a
-                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-sage"
+                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-blue"
                   href="/services/technology-security"
                   >Technology &amp; security</a>
               </div>
             </div>
           </div>
           <a
-            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
             href="/training"
             >Training</a>
           <a
-            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
             href="/news/"
             >News</a>
           <a
-            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
             href="#clients"
             >Clients</a>
           <a
-            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
             href="#testimonials"
             >Results</a>
           <a
@@ -444,27 +446,27 @@
         </nav>
         <div class="flex flex-wrap items-center justify-end gap-x-2 gap-y-1 md:hidden">
           <a
-            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
             href="/founder"
             >Founder</a>
           <a
-            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
             href="/mission"
             >Mission</a>
           <a
-            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
             href="/services/"
             >Services</a>
           <a
-            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
             href="/training"
             >Training</a>
           <a
-            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
             href="/news/"
             >News</a>
           <a
-            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-sage"
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
             href="#clients"
             >Clients</a>
           <a
@@ -485,9 +487,9 @@
           class="text-flow mx-auto max-w-6xl px-4 pb-16 pt-12 sm:px-6 sm:pb-20 sm:pt-16 lg:px-8 lg:pb-24 lg:pt-20"
         >
           <p
-            class="mb-3 inline-flex items-center gap-2 rounded-full border border-brand-taupe/30 bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-sage shadow-sm"
+            class="mb-3 inline-flex items-center gap-2 rounded-full border border-brand-taupe/30 bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-blue shadow-sm"
           >
-            <span class="h-1.5 w-1.5 rounded-full bg-brand-sage" aria-hidden="true"></span>
+            <span class="h-1.5 w-1.5 rounded-full bg-brand-blue" aria-hidden="true"></span>
             Built for healthcare organizations
           </p>
           <h1
@@ -511,7 +513,7 @@
               >Get a free digital risk check</a>
             <a
               href="#services"
-              class="cursor-pointer inline-flex items-center justify-center rounded-full border border-brand-ink/15 bg-brand-paper px-6 py-3 text-sm font-semibold text-brand-ink shadow-sm transition hover:border-brand-sage/55 hover:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-sage focus-visible:ring-offset-2"
+              class="cursor-pointer inline-flex items-center justify-center rounded-full border border-brand-ink/15 bg-brand-paper px-6 py-3 text-sm font-semibold text-brand-ink shadow-sm transition hover:border-brand-blue/55 hover:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2"
               >See how we work</a>
           </div>
           <dl
@@ -572,7 +574,7 @@
       >
         <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
           <div class="text-flow max-w-3xl">
-            <p class="text-sm font-semibold uppercase tracking-wider text-brand-sage">
+            <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">
               Sound familiar?
             </p>
             <h2
@@ -641,7 +643,7 @@
         <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
           <div class="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
             <div class="text-flow">
-            <p class="text-sm font-semibold uppercase tracking-wider text-brand-sage">
+            <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">
               Who we are
             </p>
             <h2
@@ -663,7 +665,7 @@
             </p>
             <a
               href="#contact"
-              class="mt-8 inline-flex cursor-pointer items-center gap-2 text-sm font-semibold text-brand-sage underline-offset-4 transition hover:text-brand-ink hover:underline"
+              class="mt-8 inline-flex cursor-pointer items-center gap-2 text-sm font-semibold text-brand-blue underline-offset-4 transition hover:text-brand-ink hover:underline"
             >
               Get a free digital risk check
               <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -683,7 +685,7 @@
             >
               <div class="flex items-start gap-4">
                 <div
-                  class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-sage/35 text-brand-ink"
+                  class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-blue/35 text-brand-ink"
                   aria-hidden="true"
                 >
                   <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none">
@@ -751,7 +753,7 @@
             >
               <div class="flex items-start gap-4">
                 <div
-                  class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-sage/35 text-brand-ink"
+                  class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-blue/35 text-brand-ink"
                   aria-hidden="true"
                 >
                   <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none">
@@ -786,7 +788,7 @@
       >
         <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
           <div class="text-flow max-w-3xl">
-            <p class="text-sm font-semibold uppercase tracking-wider text-brand-sage">
+            <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">
               Services
             </p>
             <h2
@@ -811,7 +813,7 @@
                 more mystery admins. No more compliance guesswork.
               </p>
               <a
-                class="mt-5 inline-flex text-sm font-semibold text-brand-sage underline-offset-4 transition hover:text-brand-ink"
+                class="mt-5 inline-flex text-sm font-semibold text-brand-blue underline-offset-4 transition hover:text-brand-ink"
                 href="/services/digital-governance"
                 >Read more</a>
             </li>
@@ -825,7 +827,7 @@
                 documented from day one.
               </p>
               <a
-                class="mt-5 inline-flex text-sm font-semibold text-brand-sage underline-offset-4 transition hover:text-brand-ink"
+                class="mt-5 inline-flex text-sm font-semibold text-brand-blue underline-offset-4 transition hover:text-brand-ink"
                 href="/services/websites-digital-foundations"
                 >Read more</a>
             </li>
@@ -839,7 +841,7 @@
                 professionally, and in line with your policies.
               </p>
               <a
-                class="mt-5 inline-flex text-sm font-semibold text-brand-sage underline-offset-4 transition hover:text-brand-ink"
+                class="mt-5 inline-flex text-sm font-semibold text-brand-blue underline-offset-4 transition hover:text-brand-ink"
                 href="/services/reputation-risk"
                 >Read more</a>
             </li>
@@ -852,7 +854,7 @@
                 a standing partner — so you're never re-explaining your setup to a new vendor every year.
               </p>
               <a
-                class="mt-5 inline-flex text-sm font-semibold text-brand-sage underline-offset-4 transition hover:text-brand-ink"
+                class="mt-5 inline-flex text-sm font-semibold text-brand-blue underline-offset-4 transition hover:text-brand-ink"
                 href="/services/partnership-support"
                 >Read more</a>
             </li>
@@ -865,7 +867,7 @@
                 and technology decisions — protection that doesn't slow your care teams down.
               </p>
               <a
-                class="mt-5 inline-flex text-sm font-semibold text-brand-sage underline-offset-4 transition hover:text-brand-ink"
+                class="mt-5 inline-flex text-sm font-semibold text-brand-blue underline-offset-4 transition hover:text-brand-ink"
                 href="/services/technology-security"
                 >Read more</a>
             </li>
@@ -880,7 +882,7 @@
             </p>
             <a
               href="#contact"
-              class="mt-6 inline-flex cursor-pointer items-center justify-center rounded-full bg-brand-paper px-6 py-3 text-sm font-semibold text-brand-ink shadow-soft transition hover:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-sage focus-visible:ring-offset-2 focus-visible:ring-offset-brand-ink"
+              class="mt-6 inline-flex cursor-pointer items-center justify-center rounded-full bg-brand-paper px-6 py-3 text-sm font-semibold text-brand-ink shadow-soft transition hover:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2 focus-visible:ring-offset-brand-ink"
               >Book a free digital risk check</a>
           </div>
         </div>
@@ -893,7 +895,7 @@
       >
         <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
           <div class="mx-auto max-w-3xl text-center">
-            <p class="text-sm font-semibold uppercase tracking-wider text-brand-sage">
+            <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">
               Trusted partners
             </p>
             <h2
@@ -1090,7 +1092,7 @@
         aria-labelledby="testimonials-heading"
       >
         <div class="max-w-3xl">
-          <p class="text-sm font-semibold uppercase tracking-wider text-brand-sage">
+          <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">
             Proof
           </p>
           <h2
@@ -1412,7 +1414,7 @@
         <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
           <div class="flex flex-wrap items-end justify-between gap-4">
             <div class="max-w-2xl">
-              <p class="text-sm font-semibold uppercase tracking-wider text-brand-sage">
+              <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">
                 Insights for operators
               </p>
               <h2
@@ -1423,18 +1425,18 @@
               </h2>
             </div>
             <a
-              class="text-sm font-semibold text-brand-ink transition hover:text-brand-sage focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-sage focus-visible:ring-offset-2"
+              class="text-sm font-semibold text-brand-ink transition hover:text-brand-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2"
               href="/news"
               >All news <span aria-hidden="true">→</span></a>
           </div>
           <ul class="mt-10 grid gap-6 lg:grid-cols-3">
             <li>
               <a
-                class="group block h-full rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card transition hover:shadow-soft focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-sage"
+                class="group block h-full rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card transition hover:shadow-soft focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue"
                 href="/news/tour-that-never-happens"
               >
-                <p class="text-xs font-semibold uppercase tracking-wider text-brand-sage">McKnight&rsquo;s · August 19, 2026</p>
-                <h3 class="mt-2 font-display text-xl font-semibold text-brand-ink transition-colors group-hover:text-brand-sage">
+                <p class="text-xs font-semibold uppercase tracking-wider text-brand-blue">McKnight&rsquo;s · August 19, 2026</p>
+                <h3 class="mt-2 font-display text-xl font-semibold text-brand-ink transition-colors group-hover:text-brand-blue">
                   The Tour That Never Happens
                 </h3>
                 <p class="mt-2 text-sm leading-relaxed text-brand-slate">
@@ -1444,13 +1446,13 @@
             </li>
             <li>
               <a
-                class="group block h-full rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card transition hover:shadow-soft focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-sage"
+                class="group block h-full rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card transition hover:shadow-soft focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue"
                 href="https://www.providermagazine.com/Articles/Pages/The-Digital-Front-Door.aspx"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <p class="text-xs font-semibold uppercase tracking-wider text-brand-sage">Provider Magazine · Summer 2026</p>
-                <h3 class="mt-2 font-display text-xl font-semibold text-brand-ink transition-colors group-hover:text-brand-sage">
+                <p class="text-xs font-semibold uppercase tracking-wider text-brand-blue">Provider Magazine · Summer 2026</p>
+                <h3 class="mt-2 font-display text-xl font-semibold text-brand-ink transition-colors group-hover:text-brand-blue">
                   The Digital Front Door
                 </h3>
                 <p class="mt-2 text-sm leading-relaxed text-brand-slate">
@@ -1460,11 +1462,11 @@
             </li>
             <li>
               <a
-                class="group block h-full rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card transition hover:shadow-soft focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-sage"
+                class="group block h-full rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card transition hover:shadow-soft focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue"
                 href="/news/who-holds-the-keys"
               >
-                <p class="text-xs font-semibold uppercase tracking-wider text-brand-sage">Sep 2026</p>
-                <h3 class="mt-2 font-display text-xl font-semibold text-brand-ink transition-colors group-hover:text-brand-sage">
+                <p class="text-xs font-semibold uppercase tracking-wider text-brand-blue">Sep 2026</p>
+                <h3 class="mt-2 font-display text-xl font-semibold text-brand-ink transition-colors group-hover:text-brand-blue">
                   Who Holds the Keys to Your Front Door?
                 </h3>
                 <p class="mt-2 text-sm leading-relaxed text-brand-slate">
@@ -1483,7 +1485,7 @@
       >
         <div class="mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2 lg:px-8 lg:py-24">
           <div class="text-flow">
-            <p class="text-sm font-semibold uppercase tracking-wider text-brand-sage">
+            <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">
               Contact
             </p>
             <h2
@@ -1502,7 +1504,7 @@
                 <dt class="font-semibold text-brand-ink">Email</dt>
                 <dd>
                   <a
-                    class="cursor-pointer text-brand-sage underline-offset-4 transition hover:text-brand-ink hover:underline"
+                    class="cursor-pointer text-brand-blue underline-offset-4 transition hover:text-brand-ink hover:underline"
                     href="mailto:ContactUs@pjrteam.com"
                     >ContactUs@pjrteam.com</a>
                 </dd>
@@ -1525,14 +1527,14 @@
               <div class="grid gap-4 sm:grid-cols-2">
                 <div>
                   <label for="firstName" class="block text-sm font-medium text-brand-ink"
-                    >First name <span class="text-brand-sage" aria-hidden="true">*</span></label>
+                    >First name <span class="text-brand-blue" aria-hidden="true">*</span></label>
                   <input
                     id="firstName"
                     name="firstName"
                     type="text"
                     autocomplete="given-name"
                     required
-                    class="mt-1.5 w-full rounded-xl border border-brand-taupe/20 bg-white px-3 py-2.5 text-sm text-brand-ink shadow-sm transition placeholder:text-brand-slate/50 focus:border-brand-sage focus:outline-none focus:ring-2 focus:ring-brand-sage/35"
+                    class="mt-1.5 w-full rounded-xl border border-brand-taupe/20 bg-white px-3 py-2.5 text-sm text-brand-ink shadow-sm transition placeholder:text-brand-slate/50 focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/35"
                     placeholder="Jordan"
                   />
                 </div>
@@ -1544,34 +1546,34 @@
                     name="lastName"
                     type="text"
                     autocomplete="family-name"
-                    class="mt-1.5 w-full rounded-xl border border-brand-taupe/20 bg-white px-3 py-2.5 text-sm text-brand-ink shadow-sm transition placeholder:text-brand-slate/50 focus:border-brand-sage focus:outline-none focus:ring-2 focus:ring-brand-sage/35"
+                    class="mt-1.5 w-full rounded-xl border border-brand-taupe/20 bg-white px-3 py-2.5 text-sm text-brand-ink shadow-sm transition placeholder:text-brand-slate/50 focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/35"
                     placeholder="Lee"
                   />
                 </div>
               </div>
               <div>
                 <label for="company" class="block text-sm font-medium text-brand-ink"
-                  >Company / organization <span class="text-brand-sage" aria-hidden="true">*</span></label>
+                  >Company / organization <span class="text-brand-blue" aria-hidden="true">*</span></label>
                 <input
                   id="company"
                   name="company"
                   type="text"
                   autocomplete="organization"
                   required
-                  class="mt-1.5 w-full rounded-xl border border-brand-taupe/20 bg-white px-3 py-2.5 text-sm text-brand-ink shadow-sm transition placeholder:text-brand-slate/50 focus:border-brand-sage focus:outline-none focus:ring-2 focus:ring-brand-sage/35"
+                  class="mt-1.5 w-full rounded-xl border border-brand-taupe/20 bg-white px-3 py-2.5 text-sm text-brand-ink shadow-sm transition placeholder:text-brand-slate/50 focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/35"
                   placeholder="Your organization name"
                 />
               </div>
               <div>
                 <label for="email" class="block text-sm font-medium text-brand-ink"
-                  >Email <span class="text-brand-sage" aria-hidden="true">*</span></label>
+                  >Email <span class="text-brand-blue" aria-hidden="true">*</span></label>
                 <input
                   id="email"
                   name="email"
                   type="email"
                   autocomplete="email"
                   required
-                  class="mt-1.5 w-full rounded-xl border border-brand-taupe/20 bg-white px-3 py-2.5 text-sm text-brand-ink shadow-sm transition placeholder:text-brand-slate/50 focus:border-brand-sage focus:outline-none focus:ring-2 focus:ring-brand-sage/35"
+                  class="mt-1.5 w-full rounded-xl border border-brand-taupe/20 bg-white px-3 py-2.5 text-sm text-brand-ink shadow-sm transition placeholder:text-brand-slate/50 focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/35"
                   placeholder="you@organization.com"
                 />
               </div>
@@ -1581,7 +1583,7 @@
                   id="message"
                   name="message"
                   rows="4"
-                  class="mt-1.5 w-full rounded-xl border border-brand-taupe/20 bg-white px-3 py-2.5 text-sm text-brand-ink shadow-sm transition placeholder:text-brand-slate/50 focus:border-brand-sage focus:outline-none focus:ring-2 focus:ring-brand-sage/35"
+                  class="mt-1.5 w-full rounded-xl border border-brand-taupe/20 bg-white px-3 py-2.5 text-sm text-brand-ink shadow-sm transition placeholder:text-brand-slate/50 focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/35"
                   placeholder="What’s most urgent right now? (reviews, rebrand, access, website, etc.)"
                 ></textarea>
               </div>
@@ -1607,7 +1609,7 @@
       >
         <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
           <div class="max-w-3xl">
-            <p class="text-sm font-semibold uppercase tracking-wider text-brand-sage">FAQ</p>
+            <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">FAQ</p>
             <h2
               id="faq-heading"
               class="text-balance mt-2 font-display text-3xl font-semibold tracking-tight text-brand-ink sm:text-4xl"
@@ -1676,7 +1678,7 @@
           <p class="mt-1 text-sm text-white/75">PO Box 767 · Dana Point, CA 92629</p>
           <p class="text-sm text-white/75">
             <a
-              class="cursor-pointer text-brand-sage underline-offset-4 transition hover:text-white hover:underline"
+              class="cursor-pointer text-brand-blueMist underline-offset-4 transition hover:text-white hover:underline"
               href="mailto:ContactUs@pjrteam.com"
               >ContactUs@pjrteam.com</a>
           </p>
@@ -1684,38 +1686,38 @@
             <span class="font-medium text-white">Connect</span>
             <span class="mx-2 text-white/40" aria-hidden="true">·</span>
             <a
-              class="text-brand-sage underline-offset-4 transition hover:text-white hover:underline"
+              class="text-brand-blueMist underline-offset-4 transition hover:text-white hover:underline"
               href="https://maps.app.goo.gl/ZtnFLLku6xrULm7c7"
               target="_blank"
               rel="noopener noreferrer"
               >Google Business</a>
             <span class="mx-2 text-white/40" aria-hidden="true">·</span>
             <a
-              class="text-brand-sage underline-offset-4 transition hover:text-white hover:underline"
+              class="text-brand-blueMist underline-offset-4 transition hover:text-white hover:underline"
               href="https://www.instagram.com/pjrteam_/"
               target="_blank"
               rel="noopener noreferrer"
               >Instagram</a>
             <span class="mx-2 text-white/40" aria-hidden="true">·</span>
             <a
-              class="text-brand-sage underline-offset-4 transition hover:text-white hover:underline"
+              class="text-brand-blueMist underline-offset-4 transition hover:text-white hover:underline"
               href="https://www.linkedin.com/company/pjrteam1/"
               target="_blank"
               rel="noopener noreferrer"
               >LinkedIn</a>
           </nav>
           <p class="mt-3 text-sm text-white/60">
-            <a class="text-brand-sage underline-offset-4 transition hover:text-white hover:underline" href="/">Home</a>
+            <a class="text-brand-blueMist underline-offset-4 transition hover:text-white hover:underline" href="/">Home</a>
             <span class="mx-2 text-white/40" aria-hidden="true">·</span>
-            <a class="text-brand-sage underline-offset-4 transition hover:text-white hover:underline" href="/founder">Founder</a>
+            <a class="text-brand-blueMist underline-offset-4 transition hover:text-white hover:underline" href="/founder">Founder</a>
             <span class="mx-2 text-white/40" aria-hidden="true">·</span>
-            <a class="text-brand-sage underline-offset-4 transition hover:text-white hover:underline" href="/mission">Mission &amp; values</a>
+            <a class="text-brand-blueMist underline-offset-4 transition hover:text-white hover:underline" href="/mission">Mission &amp; values</a>
             <span class="mx-2 text-white/40" aria-hidden="true">·</span>
-            <a class="text-brand-sage underline-offset-4 transition hover:text-white hover:underline" href="/services/">Services</a>
+            <a class="text-brand-blueMist underline-offset-4 transition hover:text-white hover:underline" href="/services/">Services</a>
             <span class="mx-2 text-white/40" aria-hidden="true">·</span>
-            <a class="text-brand-sage underline-offset-4 transition hover:text-white hover:underline" href="/training">Training</a>
+            <a class="text-brand-blueMist underline-offset-4 transition hover:text-white hover:underline" href="/training">Training</a>
             <span class="mx-2 text-white/40" aria-hidden="true">·</span>
-            <a class="text-brand-sage underline-offset-4 transition hover:text-white hover:underline" href="/news/">News</a>
+            <a class="text-brand-blueMist underline-offset-4 transition hover:text-white hover:underline" href="/news/">News</a>
           </p>
         </div>
         <p class="text-sm text-white/60">

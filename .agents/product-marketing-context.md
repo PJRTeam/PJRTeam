@@ -44,7 +44,9 @@ _(Add when researched.)_
 - **Soft white** `#FAFAFA` — backgrounds, cards (`paper`)
 - **Warm stone** `#D8D3CB` — section bands, tinted surfaces (`stone`)
 - **Putty taupe** `#B8B2A6` — borders, dividers (`taupe`, legacy `rose`)
-- **Muted sage** `#C4C7B5` — links, eyebrow labels, highlights (`sage`)
+- **Pacific blue** `#0B5E75` — links, eyebrow labels, focus rings, highlights (`blue`; from Alliance)
+- **Pacific mist** `#C0E5E3` — footer links and cool tints on dark surfaces (`blueMist`)
+- **Muted sage** `#C4C7B5` — retained as a secondary token (`sage`)
 
 ## Training product (`training.html`)
 
