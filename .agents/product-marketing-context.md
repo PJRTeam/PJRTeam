@@ -19,7 +19,7 @@ _Use this file as the foundation for all marketing-skills workflows (see `produc
 
 - **One-liner:** Healthcare-focused technology and digital governance partner—structure, protection, partnership.
 - **Audience:** Healthcare leaders and marketing/operations teams managing websites, social, reviews, and digital risk.
-- **Proof points:** 20+ years combined experience; 5 core service areas; 10+ years healthcare-focused; ongoing support model.
+- **Proof points:** 20+ years in marketing; over 10 years in senior living / skilled nursing digital marketing; 5 core service areas; ongoing support model.
 
 ## Core services (five areas)
 
