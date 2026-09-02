@@ -334,6 +334,7 @@
         ]
       }
     </script>
+    <link rel="stylesheet" href="/public/css/site.css" />
   </head>
   <body class="min-h-screen bg-white">
     <a
@@ -342,7 +343,7 @@
       >Skip to main content</a>
 
     <header
-      class="sticky top-0 z-50 border-b border-brand-taupe/15 bg-white/95 backdrop-blur-md shadow-sm"
+      class="site-header sticky top-0 z-50 border-b border-brand-taupe/15 bg-white/95 backdrop-blur-md shadow-sm"
     >
       <div
         class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8"
@@ -444,7 +445,24 @@
             href="#contact"
             >Free risk check</a>
         </nav>
-        <div class="flex flex-wrap items-center justify-end gap-x-2 gap-y-1 md:hidden">
+        <button
+          type="button"
+          class="nav-toggle"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="mobile-panel"
+          aria-label="Open menu"
+        >
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+            <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-panel" class="mobile-panel" hidden>
+          <a
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
+            href="#about"
+            >About</a>
           <a
             class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
             href="/founder"
@@ -470,82 +488,95 @@
             href="#clients"
             >Clients</a>
           <a
-            class="cursor-pointer rounded-full bg-brand-ink px-3 py-2 text-sm font-semibold text-white transition hover:bg-brand-ink/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-ink"
+            class="cursor-pointer mobile-cta rounded-full bg-brand-ink px-3 py-2 text-sm font-semibold text-white transition hover:bg-brand-ink/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-ink"
             href="#contact"
             >Free risk check</a>
-        </div>
       </div>
     </header>
 
     <main id="main">
       <section
         id="top"
-        class="relative overflow-hidden bg-wash-hero"
+        class="hero-stage"
         aria-labelledby="hero-heading"
       >
+        <div class="hero-stage__media">
+          <img
+            src="public/images/hero-reviews.jpg"
+            alt="A Google listing for a skilled nursing facility on a phone, showing a low star rating and an unanswered review."
+            width="2000"
+            height="1125"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+        <div class="hero-stage__shade" aria-hidden="true"></div>
         <div
-          class="text-flow mx-auto max-w-6xl px-4 pb-16 pt-12 sm:px-6 sm:pb-20 sm:pt-16 lg:px-8 lg:pb-24 lg:pt-20"
+          class="hero-stage__content text-flow mx-auto w-full max-w-6xl px-4 pt-16 sm:px-6 lg:px-8 lg:pt-20"
         >
           <p
-            class="mb-3 inline-flex items-center gap-2 rounded-full border border-brand-taupe/30 bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-blue shadow-sm"
+            class="mb-3 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white shadow-sm backdrop-blur-sm"
           >
-            <span class="h-1.5 w-1.5 rounded-full bg-brand-blue" aria-hidden="true"></span>
+            <span class="h-1.5 w-1.5 rounded-full bg-brand-blueMist" aria-hidden="true"></span>
             Built for healthcare organizations
           </p>
           <h1
             id="hero-heading"
-            class="text-balance font-display text-4xl font-semibold leading-tight tracking-tight text-brand-ink sm:text-5xl lg:max-w-4xl lg:text-6xl"
+            class="text-balance max-w-3xl font-display text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl"
           >
-            Your reputation is being written online right now — <span class="text-brand-blue">with or without you.</span>
+            Your reputation is being written online right now — <span class="text-brand-blueMist">with or without you.</span>
           </h1>
-          <p class="mt-5 max-w-2xl text-lg leading-relaxed text-brand-slate sm:text-xl">
+          <p class="mt-5 max-w-2xl text-lg leading-relaxed text-white/85 sm:text-xl">
             PJR Team gives healthcare organizations control of their digital presence: who has access,
             what gets published, how reviews get answered, and what happens when something goes wrong.
             One partner. Clear ownership. No surprises.
           </p>
-          <p class="mt-4 max-w-2xl text-base font-medium leading-relaxed text-brand-slate/80 sm:text-lg">
+          <p class="mt-4 max-w-2xl text-base font-medium leading-relaxed text-white/75 sm:text-lg">
             For single organizations to multi-state brand scaling for affiliated facilities.
           </p>
           <div class="mt-8 flex flex-wrap items-center gap-4">
             <a
               href="#contact"
-              class="cursor-pointer inline-flex items-center justify-center rounded-full bg-brand-ink px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-brand-ink/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-ink focus-visible:ring-offset-2"
+              class="cursor-pointer inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand-ink shadow-soft transition hover:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-ink"
               >Get a free digital risk check</a>
             <a
               href="#services"
-              class="cursor-pointer inline-flex items-center justify-center rounded-full border border-brand-ink/15 bg-brand-paper px-6 py-3 text-sm font-semibold text-brand-ink shadow-sm transition hover:border-brand-blue/55 hover:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2"
+              class="cursor-pointer inline-flex items-center justify-center rounded-full border border-white/35 bg-white/10 px-6 py-3 text-sm font-semibold text-white shadow-sm backdrop-blur-sm transition hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-ink"
               >See how we work</a>
           </div>
-          <dl
-            class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
-            aria-label="Highlights"
-          >
-            <div class="rounded-2xl border border-brand-taupe/20 bg-white p-5 shadow-card">
-              <dt class="font-display text-3xl font-semibold text-brand-ink">20+</dt>
-              <dd class="mt-1 text-sm font-medium text-brand-slate">Years in healthcare &amp; marketing</dd>
-            </div>
-            <div class="rounded-2xl border border-brand-taupe/20 bg-white p-5 shadow-card">
-              <dt class="font-display text-3xl font-semibold text-brand-ink">24–48 hr</dt>
-              <dd class="mt-1 text-sm font-medium text-brand-slate">Review response standard</dd>
-            </div>
-            <div class="rounded-2xl border border-brand-taupe/20 bg-white p-5 shadow-card">
-              <dt class="font-display text-3xl font-semibold text-brand-ink">1</dt>
-              <dd class="mt-1 text-sm font-medium text-brand-slate">Partner for web, social, reputation &amp; tech</dd>
-            </div>
-            <div class="rounded-2xl border border-brand-taupe/20 bg-white p-5 shadow-card">
-              <dt class="font-display text-3xl font-semibold text-brand-ink">$0</dt>
-              <dd class="mt-1 text-sm font-medium text-brand-slate">Surprise fees — flat monthly programs</dd>
-            </div>
-          </dl>
         </div>
       </section>
 
+      <div class="hero-stats px-4 sm:px-6 lg:px-8">
+        <dl
+          class="mx-auto grid max-w-6xl gap-px overflow-hidden rounded-2xl border border-brand-taupe/20 bg-brand-taupe/20 shadow-card sm:grid-cols-2 lg:grid-cols-4"
+          aria-label="Highlights"
+        >
+          <div class="bg-white p-5 sm:p-6">
+            <dt class="font-display text-3xl font-semibold text-brand-ink">20+</dt>
+            <dd class="mt-1 text-sm font-medium text-brand-slate">Years in healthcare &amp; marketing</dd>
+          </div>
+          <div class="bg-white p-5 sm:p-6">
+            <dt class="font-display text-3xl font-semibold text-brand-ink">24–48 hr</dt>
+            <dd class="mt-1 text-sm font-medium text-brand-slate">Review response standard</dd>
+          </div>
+          <div class="bg-white p-5 sm:p-6">
+            <dt class="font-display text-3xl font-semibold text-brand-ink">1</dt>
+            <dd class="mt-1 text-sm font-medium text-brand-slate">Partner for web, social, reputation &amp; tech</dd>
+          </div>
+          <div class="bg-white p-5 sm:p-6">
+            <dt class="font-display text-3xl font-semibold text-brand-ink">$0</dt>
+            <dd class="mt-1 text-sm font-medium text-brand-slate">Surprise fees — flat monthly programs</dd>
+          </div>
+        </dl>
+      </div>
+
       <section
         id="standard"
-        class="border-t border-brand-taupe/15 bg-brand-ink text-white"
+        class="bg-brand-ink pt-16 text-white sm:pt-20"
         aria-labelledby="standard-heading"
       >
-        <div class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-10 sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:py-12 lg:px-8">
+        <div class="mx-auto flex max-w-6xl flex-col gap-6 px-4 pb-10 sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:pb-12 lg:px-8">
           <div class="max-w-3xl">
             <h2
               id="standard-heading"
@@ -573,6 +604,8 @@
         aria-labelledby="problems-heading"
       >
         <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+          <div class="grid items-start gap-10 lg:grid-cols-12 lg:gap-14">
+            <div class="lg:col-span-7">
           <div class="text-flow max-w-3xl">
             <p class="text-sm font-semibold uppercase tracking-wider text-brand-blue">
               Sound familiar?
@@ -630,6 +663,21 @@
             If any of these sound familiar, you don't have a marketing problem. You have an ownership
             problem. That's what we fix first.
           </p>
+            </div>
+            <div class="lg:col-span-5">
+              <figure class="photo-frame">
+                <img
+                  src="public/images/work-reviews-inbox.jpg"
+                  alt="A review-response inbox on a laptop, with unanswered one-star reviews for a skilled nursing facility."
+                  width="2000"
+                  height="1125"
+                  class="aspect-[4/5] object-cover lg:min-h-[36rem]"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -680,6 +728,17 @@
             </a>
             </div>
             <div class="grid gap-4">
+            <figure class="photo-frame">
+              <img
+                src="public/images/work-website.jpg"
+                alt="A skilled nursing website on a laptop, with ratings, reviews, and a tour call-to-action."
+                width="2000"
+                height="1125"
+                class="aspect-[16/10] object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
             <article
               class="rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card transition hover:shadow-soft"
             >
@@ -803,73 +862,119 @@
             </p>
           </div>
           <ul class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <li class="flex h-full flex-col rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card">
+            <li>
+              <a class="media-card" href="/services/digital-governance">
+                <img
+                  src="public/service-digital-governance.png"
+                  alt=""
+                  width="1400"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="media-card__body">
               <h3 class="font-display text-lg font-semibold text-brand-ink">
                 Digital governance &amp; social management
               </h3>
-              <p class="mt-3 flex-1 text-sm leading-relaxed text-brand-slate">
+              <p class="mt-3 text-sm leading-relaxed text-brand-slate">
                 You'll always know who has access to what. We audit, document, and lock down your
                 accounts — then run social publishing with content guardrails built for healthcare. No
                 more mystery admins. No more compliance guesswork.
               </p>
-              <a
-                class="mt-5 inline-flex text-sm font-semibold text-brand-blue underline-offset-4 transition hover:text-brand-ink"
-                href="/services/digital-governance"
-                >Read more</a>
+              <span class="mt-5 inline-flex text-sm font-semibold text-brand-blue">Read more</span>
+                </div>
+              </a>
             </li>
-            <li class="flex h-full flex-col rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card">
+            <li>
+              <a class="media-card" href="/services/websites-digital-foundations">
+                <img
+                  src="public/service-rebrands.png"
+                  alt=""
+                  width="1400"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="media-card__body">
               <h3 class="font-display text-lg font-semibold text-brand-ink">
                 Rebrands, websites &amp; digital foundations
               </h3>
-              <p class="mt-3 flex-1 text-sm leading-relaxed text-brand-slate">
+              <p class="mt-3 text-sm leading-relaxed text-brand-slate">
                 A site that matches the care you deliver. New facility, new name, or long-overdue refresh
                 — we build websites that referral sources and families trust, with ownership and access
                 documented from day one.
               </p>
-              <a
-                class="mt-5 inline-flex text-sm font-semibold text-brand-blue underline-offset-4 transition hover:text-brand-ink"
-                href="/services/websites-digital-foundations"
-                >Read more</a>
+              <span class="mt-5 inline-flex text-sm font-semibold text-brand-blue">Read more</span>
+                </div>
+              </a>
             </li>
-            <li class="flex h-full flex-col rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card">
+            <li>
+              <a class="media-card" href="/services/reputation-risk">
+                <img
+                  src="public/service-reputation-risk.png"
+                  alt=""
+                  width="1400"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="media-card__body">
               <h3 class="font-display text-lg font-semibold text-brand-ink">
                 Reputation &amp; risk management
               </h3>
-              <p class="mt-3 flex-1 text-sm leading-relaxed text-brand-slate">
+              <p class="mt-3 text-sm leading-relaxed text-brand-slate">
                 Every review answered. Every trend spotted. We monitor reviews and public sentiment
                 across platforms and respond within our 24–48 hour standard — compassionately,
                 professionally, and in line with your policies.
               </p>
-              <a
-                class="mt-5 inline-flex text-sm font-semibold text-brand-blue underline-offset-4 transition hover:text-brand-ink"
-                href="/services/reputation-risk"
-                >Read more</a>
+              <span class="mt-5 inline-flex text-sm font-semibold text-brand-blue">Read more</span>
+                </div>
+              </a>
             </li>
-            <li class="flex h-full flex-col rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card md:col-span-2 lg:col-span-1">
+            <li>
+              <a class="media-card" href="/services/partnership-support">
+                <img
+                  src="public/service-partnership-support.png"
+                  alt=""
+                  width="1400"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="media-card__body">
               <h3 class="font-display text-lg font-semibold text-brand-ink">
                 Partnership &amp; ongoing support
               </h3>
-              <p class="mt-3 flex-1 text-sm leading-relaxed text-brand-slate">
+              <p class="mt-3 text-sm leading-relaxed text-brand-slate">
                 A team that already knows your systems. Monthly oversight, plain-English reporting, and
                 a standing partner — so you're never re-explaining your setup to a new vendor every year.
               </p>
-              <a
-                class="mt-5 inline-flex text-sm font-semibold text-brand-blue underline-offset-4 transition hover:text-brand-ink"
-                href="/services/partnership-support"
-                >Read more</a>
+              <span class="mt-5 inline-flex text-sm font-semibold text-brand-blue">Read more</span>
+                </div>
+              </a>
             </li>
-            <li class="flex h-full flex-col rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card md:col-span-2 lg:col-span-2">
+            <li class="md:col-span-2">
+              <a class="media-card media-card--split" href="/services/technology-security">
+                <img
+                  src="public/service-technology-security.png"
+                  alt=""
+                  width="1400"
+                  height="900"
+                  class="lg:h-full lg:w-[42%] lg:min-h-[14rem]"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="media-card__body">
               <h3 class="font-display text-lg font-semibold text-brand-ink">
                 Technology &amp; security oversight
               </h3>
-              <p class="mt-3 flex-1 text-sm leading-relaxed text-brand-slate">
+              <p class="mt-3 text-sm leading-relaxed text-brand-slate">
                 Fewer risks, fewer surprises. Practical guidance on access patterns, account security,
                 and technology decisions — protection that doesn't slow your care teams down.
               </p>
-              <a
-                class="mt-5 inline-flex text-sm font-semibold text-brand-blue underline-offset-4 transition hover:text-brand-ink"
-                href="/services/technology-security"
-                >Read more</a>
+              <span class="mt-5 inline-flex text-sm font-semibold text-brand-blue">Read more</span>
+                </div>
+              </a>
             </li>
           </ul>
           <div class="mt-12 rounded-2xl bg-brand-ink px-6 py-8 text-center sm:px-10">
@@ -1432,46 +1537,76 @@
           <ul class="mt-10 grid gap-6 lg:grid-cols-3">
             <li>
               <a
-                class="group block h-full rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card transition hover:shadow-soft focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue"
+                class="media-card"
                 href="/news/tour-that-never-happens"
               >
+                <img
+                  src="public/news/tour-that-never-happens.png"
+                  alt=""
+                  width="1536"
+                  height="1024"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="media-card__body">
                 <p class="text-xs font-semibold uppercase tracking-wider text-brand-blue">McKnight&rsquo;s · August 19, 2026</p>
-                <h3 class="mt-2 font-display text-xl font-semibold text-brand-ink transition-colors group-hover:text-brand-blue">
+                <h3 class="mt-2 font-display text-xl font-semibold text-brand-ink">
                   The Tour That Never Happens
                 </h3>
                 <p class="mt-2 text-sm leading-relaxed text-brand-slate">
                   Brittney Davis on why families decide against you on a phone—before admissions ever knows they exist.
                 </p>
+                </div>
               </a>
             </li>
             <li>
               <a
-                class="group block h-full rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card transition hover:shadow-soft focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue"
+                class="media-card"
                 href="https://www.providermagazine.com/Articles/Pages/The-Digital-Front-Door.aspx"
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <img
+                  src="public/news/digital-front-door-provider.png"
+                  alt=""
+                  width="1536"
+                  height="1024"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="media-card__body">
                 <p class="text-xs font-semibold uppercase tracking-wider text-brand-blue">Provider Magazine · Summer 2026</p>
-                <h3 class="mt-2 font-display text-xl font-semibold text-brand-ink transition-colors group-hover:text-brand-blue">
+                <h3 class="mt-2 font-display text-xl font-semibold text-brand-ink">
                   The Digital Front Door
                 </h3>
                 <p class="mt-2 text-sm leading-relaxed text-brand-slate">
                   Brittney Davis on why your online presence is the first tour—and how to own it.
                 </p>
+                </div>
               </a>
             </li>
             <li>
               <a
-                class="group block h-full rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card transition hover:shadow-soft focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue"
+                class="media-card"
                 href="/news/who-holds-the-keys"
               >
+                <img
+                  src="public/news/who-holds-the-keys.png"
+                  alt=""
+                  width="1536"
+                  height="1024"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="media-card__body">
                 <p class="text-xs font-semibold uppercase tracking-wider text-brand-blue">Sep 2026</p>
-                <h3 class="mt-2 font-display text-xl font-semibold text-brand-ink transition-colors group-hover:text-brand-blue">
+                <h3 class="mt-2 font-display text-xl font-semibold text-brand-ink">
                   Who Holds the Keys to Your Front Door?
                 </h3>
                 <p class="mt-2 text-sm leading-relaxed text-brand-slate">
                   Why social media training is non-negotiable in healthcare.
                 </p>
+                </div>
               </a>
             </li>
           </ul>
@@ -1514,6 +1649,17 @@
                 <dd class="text-brand-slate">PO Box 767, Dana Point, CA 92629</dd>
               </div>
             </dl>
+            <figure class="photo-frame mt-10 hidden lg:block">
+              <img
+                src="public/images/work-access.jpg"
+                alt="An account-ownership inventory on a laptop, showing platform logins and a former-employee warning."
+                width="2000"
+                height="1125"
+                class="aspect-[16/10] object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
           </div>
           <div class="rounded-2xl border border-brand-taupe/20 bg-brand-mist p-6 shadow-card sm:p-8">
             <form
@@ -1726,114 +1872,6 @@
       </div>
     </footer>
 
-    <script>
-      (function () {
-        var form = document.getElementById("contact-form");
-        var formStatus = document.getElementById("form-status");
-        var submitBtn = form ? form.querySelector('button[type="submit"]') : null;
-
-        if (form) {
-          form.addEventListener("submit", function (e) {
-            e.preventDefault();
-            var fd = new FormData(form);
-            var data = {
-              firstName: String(fd.get("firstName") || "").trim(),
-              lastName: String(fd.get("lastName") || "").trim(),
-              company: String(fd.get("company") || "").trim(),
-              email: String(fd.get("email") || "").trim(),
-              message: String(fd.get("message") || "").trim(),
-            };
-
-            if (!data.firstName || !data.company || !data.email) {
-              if (formStatus) {
-                formStatus.textContent =
-                  "Please complete first name, company, and email so we can respond.";
-                formStatus.classList.remove("hidden", "text-emerald-800");
-                formStatus.classList.add("text-red-800");
-              }
-              return;
-            }
-
-            var endpoint =
-              form.getAttribute("data-formspree-endpoint") ||
-              form.getAttribute("action") ||
-              "";
-
-            if (!endpoint || endpoint.indexOf("xpjrteam") !== -1) {
-              if (formStatus) {
-                formStatus.textContent =
-                  "Form is not configured yet. Email us at ContactUs@pjrteam.com and we'll respond within one business day.";
-                formStatus.classList.remove("hidden", "text-emerald-800");
-                formStatus.classList.add("text-red-800");
-              }
-              return;
-            }
-
-            if (submitBtn) {
-              submitBtn.disabled = true;
-              submitBtn.textContent = "Sending…";
-            }
-
-            fetch(endpoint, {
-              method: "POST",
-              headers: {
-                Accept: "application/json",
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify({
-                firstName: data.firstName,
-                lastName: data.lastName,
-                company: data.company,
-                email: data.email,
-                message: data.message,
-                _subject: "Website inquiry from " + data.company,
-                _replyto: data.email,
-              }),
-            })
-              .then(function (res) {
-                if (!res.ok) throw new Error("submit failed");
-                form.reset();
-                if (formStatus) {
-                  formStatus.textContent =
-                    "Thank you — we received your message and will reply within one business day.";
-                  formStatus.classList.remove("hidden", "text-red-800");
-                  formStatus.classList.add("text-emerald-800");
-                }
-              })
-              .catch(function () {
-                if (formStatus) {
-                  formStatus.textContent =
-                    "Something went wrong. Please email ContactUs@pjrteam.com directly.";
-                  formStatus.classList.remove("hidden", "text-emerald-800");
-                  formStatus.classList.add("text-red-800");
-                }
-              })
-              .finally(function () {
-                if (submitBtn) {
-                  submitBtn.disabled = false;
-                  submitBtn.textContent = "Submit";
-                }
-              });
-          });
-        }
-
-        var yearEl = document.getElementById("year");
-        if (yearEl) yearEl.textContent = String(new Date().getFullYear());
-
-        var clientsLogos = document.getElementById("clients-logos");
-        var clientsTrack = clientsLogos
-          ? clientsLogos.closest(".clients-marquee-track")
-          : null;
-        if (clientsLogos && clientsTrack) {
-          var clientsClone = clientsLogos.cloneNode(true);
-          clientsClone.setAttribute("aria-hidden", "true");
-          clientsClone.removeAttribute("id");
-          clientsClone.querySelectorAll("img").forEach(function (img) {
-            img.alt = "";
-          });
-          clientsTrack.appendChild(clientsClone);
-        }
-      })();
-    </script>
+    <script src="/public/js/site.js" defer></script>
   </body>
 </html>

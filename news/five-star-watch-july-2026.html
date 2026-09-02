@@ -162,6 +162,7 @@
         ]
       }
     </script>
+    <link rel="stylesheet" href="/public/css/site.css" />
   </head>
   <body class="min-h-screen bg-white">
     <a
@@ -170,7 +171,7 @@
       >Skip to main content</a>
 
     <header
-      class="sticky top-0 z-50 border-b border-brand-taupe/20 bg-white/95 backdrop-blur-md shadow-sm"
+      class="site-header sticky top-0 z-50 border-b border-brand-taupe/20 bg-white/95 backdrop-blur-md shadow-sm"
     >
       <div
         class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8"
@@ -273,7 +274,20 @@
             href="/#contact"
             >Free risk check</a>
         </nav>
-        <div class="flex flex-wrap items-center justify-end gap-x-2 gap-y-1 md:hidden">
+        <button
+          type="button"
+          class="nav-toggle"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="mobile-panel"
+          aria-label="Open menu"
+        >
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+            <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-panel" class="mobile-panel" hidden>
           <a
             class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
             href="/founder"
@@ -296,10 +310,9 @@
             aria-current="page"
             >News</a>
           <a
-            class="cursor-pointer rounded-full bg-brand-ink px-3 py-2 text-sm font-semibold text-white transition hover:bg-brand-ink/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-ink"
+            class="cursor-pointer mobile-cta rounded-full bg-brand-ink px-3 py-2 text-sm font-semibold text-white transition hover:bg-brand-ink/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-ink"
             href="/#contact"
             >Free risk check</a>
-        </div>
       </div>
     </header>
 
@@ -515,11 +528,6 @@
       </div>
     </footer>
 
-    <script>
-      (function () {
-        var yearEl = document.getElementById("year");
-        if (yearEl) yearEl.textContent = String(new Date().getFullYear());
-      })();
-    </script>
+    <script src="/public/js/site.js" defer></script>
   </body>
 </html>

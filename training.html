@@ -152,6 +152,7 @@
         ]
       }
     </script>
+    <link rel="stylesheet" href="/public/css/site.css" />
   </head>
   <body class="min-h-screen bg-white">
     <a
@@ -160,7 +161,7 @@
       >Skip to main content</a>
 
     <header
-      class="sticky top-0 z-50 border-b border-brand-taupe/20 bg-white/95 backdrop-blur-md shadow-sm"
+      class="site-header sticky top-0 z-50 border-b border-brand-taupe/20 bg-white/95 backdrop-blur-md shadow-sm"
     >
       <div
         class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8"
@@ -259,7 +260,20 @@
             href="/#contact"
             >Contact</a>
         </nav>
-        <div class="flex flex-wrap items-center justify-end gap-x-2 gap-y-1 md:hidden">
+        <button
+          type="button"
+          class="nav-toggle"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="mobile-panel"
+          aria-label="Open menu"
+        >
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+            <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-panel" class="mobile-panel" hidden>
           <a
             class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
             href="/founder"
@@ -282,10 +296,9 @@
             href="/news/"
             >News</a>
           <a
-            class="cursor-pointer rounded-full bg-brand-ink px-3 py-2 text-sm font-semibold text-white transition hover:bg-brand-ink/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-ink"
+            class="cursor-pointer mobile-cta rounded-full bg-brand-ink px-3 py-2 text-sm font-semibold text-white transition hover:bg-brand-ink/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-ink"
             href="/#contact"
             >Contact</a>
-        </div>
       </div>
     </header>
 
@@ -324,8 +337,8 @@
       <div class="h-px bg-gradient-to-r from-transparent via-brand-taupe/25 to-transparent" aria-hidden="true"></div>
 
       <section class="bg-white" aria-labelledby="problem-heading">
-        <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
-          <div class="max-w-3xl text-flow">
+        <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-12 lg:px-8 lg:py-20">
+          <div class="max-w-3xl text-flow lg:col-span-7">
             <h2
               id="problem-heading"
               class="text-balance font-display text-3xl font-semibold tracking-tight text-brand-ink sm:text-4xl"
@@ -343,6 +356,17 @@
               could hand a surveyor.
             </p>
           </div>
+          <figure class="photo-frame lg:col-span-5">
+            <img
+              src="public/images/work-access.jpg"
+              alt=""
+              width="2000"
+              height="1125"
+              class="aspect-[4/5] object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
         </div>
       </section>
 
@@ -749,5 +773,6 @@
         }
       })();
     </script>
+    <script src="/public/js/site.js" defer></script>
   </body>
 </html>
