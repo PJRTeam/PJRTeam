@@ -66,15 +66,17 @@ Portrait orientation (3:4). Brittney seated in a cream chair, hands folded, with
 | `og-websites-rebrands.png` | Old vs new website with crane transformation |
 
 ### Service Images (`public/service-*.png`)
-Wide landscape (~14:9). Used as the hero image on each service page.
+Wide landscape (~14:9). Used as the card and hero image on each service page.
+
+These are **photographs of the work**, not founder illustrations — so each card is immediately distinguishable:
 
 | File | Scene |
 |---|---|
-| `service-digital-governance.png` | Brittney at a dashboard wall — social platforms, access grid, content calendar |
-| `service-reputation-risk.png` | Brittney holding a heart-shield beside a magnifying glass over star reviews |
-| `service-partnership-support.png` | Brittney and a healthcare professional in scrubs reviewing a report together |
-| `service-technology-security.png` | Brittney beside a padlock connected to server, cloud, laptop, tablet, phone |
-| `service-rebrands.png` | Brittney with blueprints between an old cluttered site and a clean new one |
+| `service-digital-governance.png` | Social access dashboard listing facility accounts, admins, and a former-employee flag |
+| `service-rebrands.png` | Skilled nursing website redesign on a laptop with brand palette and brochure |
+| `service-reputation-risk.png` | Reviews inbox on a laptop beside a Google listing, with a reply being drafted |
+| `service-partnership-support.png` | Two partners reviewing a monthly digital oversight report on tablet and paper |
+| `service-technology-security.png` | Access & security settings with 2FA on and a former-admin access revoked alert |
 
 ---
 
