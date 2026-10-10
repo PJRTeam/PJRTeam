@@ -23,6 +23,9 @@ Key characteristics:
 | Role | Color | Hex |
 |---|---|---|
 | Background | Cream white | `#FAFAFA` |
+| Site brand accent | Cascade | `#37424D` |
+| Cascade hover | Darker navy | `#2C3640` |
+| Cascade mist | Light slate (dark surfaces) | `#BEC7D0` |
 | Accent / primary | Sage green | `#C4C7B5` |
 | Fills / panels | Warm stone | `#D8D3CB` |
 | Outlines | Charcoal | `#1C1C1C` |
@@ -89,8 +92,8 @@ Flat vector illustration, [orientation]. [Scene description].
 [Include Brittney if appropriate: "A blonde woman with wavy shoulder-length hair 
 and a sage green blazer stands/sits [action/position]."]
 [Scene elements and props.]
-Color scheme: cream white (#FAFAFA) background, sage green (#C4C7B5) accents, 
-warm stone (#D8D3CB) fills, charcoal (#1C1C1C) outlines. 
+Color scheme: cream white (#FAFAFA) background, Cascade navy (#37424D) brand accent,
+sage green (#C4C7B5) secondary accents, warm stone (#D8D3CB) fills, charcoal (#1C1C1C) outlines. 
 Clean flat illustration, no gradients, no text.
 ```
 

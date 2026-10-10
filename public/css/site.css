@@ -2,7 +2,9 @@
 
 :root {
   --pjr-ink: #1c1c1c;
-  --pjr-blue: #0b5e75;
+  --pjr-blue: #37424d; /* Cascade — tumbler navy */
+  --pjr-blue-hover: #2c3640;
+  --pjr-blue-mist: #bec7d0;
   --pjr-gold: #b8956a;
   --pjr-line: rgba(28, 28, 28, 0.08);
 }
@@ -204,7 +206,7 @@
   font-family: Fraunces, Georgia, serif;
   font-size: 3.25rem;
   line-height: 1;
-  color: rgba(11, 94, 117, 0.18);
+  color: rgba(55, 66, 77, 0.18);
   pointer-events: none;
 }
 
@@ -232,7 +234,7 @@ details.group[open] summary::after {
 
 footer.bg-brand-ink {
   background:
-    radial-gradient(700px 360px at 12% 0%, rgba(192, 229, 227, 0.12), transparent 50%),
+    radial-gradient(700px 360px at 12% 0%, rgba(190, 199, 208, 0.12), transparent 50%),
     #1c1c1c !important;
 }
 
