@@ -20,6 +20,7 @@ export default {
           stone: "#F5F3F0",
           sage: "#C4C7B5",
           blue: "#37424D",
+          blueHover: "#2C3640",
           blueMist: "#BEC7D0",
           taupe: "#E5E1DA",
           rose: "#E5E1DA",

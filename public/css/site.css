@@ -71,10 +71,16 @@
 
 .mobile-panel a.mobile-cta {
   margin-top: 0.35rem;
-  background: var(--pjr-ink);
+  background: var(--pjr-blue);
   color: #fff;
   text-align: center;
   font-weight: 600;
+}
+
+.mobile-panel a.mobile-cta:hover,
+.mobile-panel a.mobile-cta:focus-visible {
+  background: var(--pjr-blue-hover);
+  color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -105,8 +111,8 @@
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(12, 16, 20, 0.9) 0%, rgba(12, 16, 20, 0.68) 42%, rgba(12, 16, 20, 0.32) 100%),
-    linear-gradient(180deg, rgba(12, 16, 20, 0.18) 0%, rgba(12, 16, 20, 0.58) 100%);
+    linear-gradient(90deg, rgba(55, 66, 77, 0.92) 0%, rgba(44, 54, 64, 0.72) 42%, rgba(12, 16, 20, 0.28) 100%),
+    linear-gradient(180deg, rgba(55, 66, 77, 0.22) 0%, rgba(12, 16, 20, 0.55) 100%);
 }
 
 .hero-stage__content {
@@ -234,14 +240,160 @@ details.group[open] summary::after {
 
 footer.bg-brand-ink {
   background:
-    radial-gradient(700px 360px at 12% 0%, rgba(190, 199, 208, 0.12), transparent 50%),
+    radial-gradient(700px 360px at 12% 0%, rgba(190, 199, 208, 0.22), transparent 50%),
     #1c1c1c !important;
+  border-top: 2px solid #37424d !important;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .media-card,
   .media-card:hover {
     transform: none;
+    transition: none;
+  }
+}
+
+/* Homepage services — editorial layout (inner wrap, so section bg:transparent cannot win) */
+.services-editorial {
+  background-color: #e7ecef;
+  background-image:
+    radial-gradient(900px 420px at 0% 0%, rgba(190, 199, 208, 0.35), transparent 58%),
+    radial-gradient(700px 380px at 100% 8%, rgba(55, 66, 77, 0.06), transparent 55%);
+}
+
+.services-stat {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: #fff;
+  border-radius: 1.25rem;
+  padding: 1.75rem 1.85rem;
+}
+
+.services-stat__num {
+  flex-shrink: 0;
+  margin: 0;
+  font-family: Fraunces, Georgia, serif;
+  font-size: clamp(3.75rem, 8vw, 5.5rem);
+  font-weight: 600;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: #37424d;
+}
+
+.services-stat__copy {
+  margin: 0;
+  max-width: 36rem;
+  padding-left: 1.5rem;
+  border-left: 1px solid rgba(28, 28, 28, 0.12);
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  color: #454545;
+}
+
+.services-cols {
+  display: grid;
+  gap: 2.25rem 1.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.services-cols > li {
+  display: flex;
+}
+
+.service-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 44px;
+  padding-top: 1.15rem;
+  border-top: 2.5px solid #37424d;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 0 0 0.35rem 0.35rem;
+  transition: color 220ms ease;
+}
+
+.service-col:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px #eef1f3, 0 0 0 4px #37424d;
+}
+
+.service-col h3 {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #1c1c1c;
+}
+
+.service-col__name {
+  margin: 0.35rem 0 0;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #37424d;
+}
+
+.service-col__blurb {
+  margin: 0.7rem 0 0;
+  flex: 1;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #454545;
+}
+
+.service-col__more {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 0.35rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #37424d;
+  text-underline-offset: 0.18em;
+}
+
+.service-col:hover h3,
+.service-col:hover .service-col__more {
+  color: #2c3640;
+}
+
+.service-col:hover .service-col__more {
+  text-decoration: underline;
+}
+
+@media (min-width: 640px) {
+  .services-stat {
+    gap: 2rem;
+    padding: 1.85rem 2.25rem;
+  }
+
+  .services-stat__copy {
+    padding-left: 2rem;
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .services-cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.5rem 2rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .services-cols {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 2rem 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-col {
     transition: none;
   }
 }

@@ -44,8 +44,8 @@ _(Add when researched.)_
 - **Soft white** `#FAFAFA` — backgrounds, cards (`paper`)
 - **Warm stone** `#D8D3CB` — section bands, tinted surfaces (`stone`)
 - **Putty taupe** `#B8B2A6` — borders, dividers (`taupe`, legacy `rose`)
-- **Cascade** `#37424D` — links, eyebrow labels, focus rings, highlights (`blue`; sampled from the matte navy tumbler)
-- **Cascade hover** `#2C3640` — darker Cascade for hover/pressed accents
+- **Cascade** `#37424D` — primary CTAs, links, eyebrow labels, focus rings, highlights (`blue`; sampled from the matte navy tumbler)
+- **Cascade hover** `#2C3640` — darker Cascade for hover/pressed buttons (`blueHover`)
 - **Cascade mist** `#BEC7D0` — footer links and cool tints on dark surfaces (`blueMist`)
 - **Muted sage** `#C4C7B5` — retained as a secondary token (`sage`)
 
