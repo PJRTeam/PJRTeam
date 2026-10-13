@@ -52,6 +52,7 @@
                 paper: "#FFFFFF",
                 stone: "#F5F3F0",
                 sage: "#C4C7B5",
+                tan: "#D8D3CB",
                 blue: "#37424D",
                 blueHover: "#2C3640",
                 blueMist: "#BEC7D0",
@@ -113,7 +114,7 @@
         background-color: #ffffff;
         color: #1c1c1c;
       }
-      main section:not([class*="bg-brand-ink"]) {
+      main section:not([class*="bg-brand-ink"]):not([class*="bg-brand-tan"]):not([class*="bg-brand-blue"]) {
         background-color: transparent;
       }
       main .text-flow > p,
@@ -419,7 +420,7 @@
         </div>
       </section>
 
-      <section class="border-t border-brand-taupe/15 bg-brand-mist" aria-labelledby="covers-heading">
+      <section class="border-t border-brand-taupe/15 bg-brand-tan" aria-labelledby="covers-heading">
         <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
           <div class="max-w-3xl">
             <h2
@@ -485,7 +486,7 @@
         </div>
       </section>
 
-      <section class="border-t border-brand-taupe/15 bg-brand-mist" aria-labelledby="quarterly-heading">
+      <section class="border-t border-brand-taupe/15 bg-brand-tan" aria-labelledby="quarterly-heading">
         <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
           <div class="max-w-3xl text-flow">
             <h2
@@ -527,7 +528,7 @@
         </div>
       </section>
 
-      <section class="border-t border-brand-taupe/15 bg-brand-mist" aria-labelledby="formats-heading">
+      <section class="border-t border-brand-taupe/15 bg-brand-tan" aria-labelledby="formats-heading">
         <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
           <div class="max-w-3xl text-flow">
             <h2
@@ -561,7 +562,7 @@
               Complete the form to request the Standard or schedule facility training.
             </p>
           </div>
-          <div class="rounded-2xl border border-brand-taupe/20 bg-brand-mist p-6 shadow-card sm:p-8">
+          <div class="rounded-2xl border border-brand-taupe/20 bg-brand-tan p-6 shadow-card sm:p-8">
             <form
               id="training-form"
               class="space-y-5"

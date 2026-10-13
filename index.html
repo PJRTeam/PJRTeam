@@ -58,6 +58,7 @@
                 paper: "#FFFFFF",
                 stone: "#F5F3F0",
                 sage: "#C4C7B5",
+                tan: "#D8D3CB",
                 blue: "#37424D",
                 blueHover: "#2C3640",
                 blueMist: "#BEC7D0",
@@ -119,7 +120,7 @@
         background-color: #ffffff;
         color: #1c1c1c;
       }
-      main section:not([class*="bg-brand-ink"]) {
+      main section:not([class*="bg-brand-ink"]):not([class*="bg-brand-tan"]):not([class*="bg-brand-blue"]) {
         background-color: transparent;
       }
       main .text-flow > p,
@@ -606,7 +607,7 @@
 
       <div class="hero-stats px-4 sm:px-6 lg:px-8">
         <dl
-          class="mx-auto grid max-w-6xl gap-px overflow-hidden rounded-2xl border border-brand-blue/15 border-t-2 border-t-brand-blue bg-brand-taupe/20 shadow-card sm:grid-cols-2 lg:grid-cols-4"
+          class="mx-auto grid max-w-6xl gap-px overflow-hidden rounded-2xl border border-brand-blue/15 border-t-2 border-t-brand-blue bg-brand-tan shadow-card sm:grid-cols-2 lg:grid-cols-4"
           aria-label="Highlights"
         >
           <div class="bg-white p-5 sm:p-6">
@@ -699,7 +700,7 @@
             </p>
           </div>
           <ul class="mt-10 grid gap-6 md:grid-cols-2">
-            <li class="rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card">
+            <li class="rounded-2xl border border-brand-taupe/20 bg-brand-tan p-6 shadow-card">
               <h3 class="font-display text-lg font-semibold leading-snug text-brand-ink">
                 "A former employee still has our Facebook login."
               </h3>
@@ -708,7 +709,7 @@
                 can't post — or worse, they still can.
               </p>
             </li>
-            <li class="rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card">
+            <li class="rounded-2xl border border-brand-taupe/20 bg-brand-tan p-6 shadow-card">
               <h3 class="font-display text-lg font-semibold leading-snug text-brand-ink">
                 "We got hit with bad reviews and nobody responded."
               </h3>
@@ -717,7 +718,7 @@
                 guilt.
               </p>
             </li>
-            <li class="rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card">
+            <li class="rounded-2xl border border-brand-taupe/20 bg-brand-tan p-6 shadow-card">
               <h3 class="font-display text-lg font-semibold leading-snug text-brand-ink">
                 "Our website doesn't match who we are anymore."
               </h3>
@@ -726,7 +727,7 @@
                 and referral sources notice.
               </p>
             </li>
-            <li class="rounded-2xl border border-brand-taupe/20 bg-white p-6 shadow-card">
+            <li class="rounded-2xl border border-brand-taupe/20 bg-brand-tan p-6 shadow-card">
               <h3 class="font-display text-lg font-semibold leading-snug text-brand-ink">
                 "We have no idea what our last agency actually set up."
               </h3>
@@ -919,7 +920,7 @@
 
       <section
         id="services"
-        class="scroll-mt-24 border-y border-brand-blue/10"
+        class="scroll-mt-24 border-y border-brand-blue/10 bg-brand-tan"
         aria-labelledby="services-heading"
       >
         <div class="services-editorial">
@@ -1246,9 +1247,10 @@
 
       <section
         id="testimonials"
-        class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24"
+        class="bg-brand-tan"
         aria-labelledby="testimonials-heading"
       >
+        <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         <div class="max-w-3xl">
           <p class="inline-flex rounded-full bg-brand-blue/10 px-3 py-1 text-sm font-semibold uppercase tracking-wider text-brand-blue">
             Proof
@@ -1620,6 +1622,7 @@
             </figcaption>
           </figure>
         </div>
+        </div>
       </section>
 
       <div class="h-px bg-gradient-to-r from-transparent via-brand-taupe/25 to-transparent" aria-hidden="true"></div>
@@ -1772,7 +1775,7 @@
               />
             </figure>
           </div>
-          <div class="rounded-2xl border border-brand-taupe/20 bg-brand-mist p-6 shadow-card sm:p-8">
+          <div class="rounded-2xl border border-brand-taupe/20 bg-brand-tan p-6 shadow-card sm:p-8">
             <form
               id="contact-form"
               class="space-y-5"
@@ -1861,7 +1864,7 @@
 
       <section
         id="faq"
-        class="border-t border-brand-taupe/15 bg-brand-mist"
+        class="border-t border-brand-taupe/15 bg-brand-tan"
         aria-labelledby="faq-heading"
       >
         <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">

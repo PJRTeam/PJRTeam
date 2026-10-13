@@ -179,7 +179,7 @@
   overflow: hidden;
   border-radius: 1.35rem;
   border: 1px solid var(--pjr-line);
-  background: #f4f1eb;
+  background: var(--pjr-tan);
   box-shadow: 0 18px 40px -24px rgba(28, 28, 28, 0.35);
 }
 
@@ -211,7 +211,7 @@
   height: 13.5rem;
   object-fit: cover;
   object-position: center 42%;
-  background: #f4f1eb;
+  background: var(--pjr-tan);
 }
 
 .media-card__body {
@@ -291,10 +291,10 @@ footer.bg-brand-ink {
 
 /* Homepage services — editorial layout (inner wrap, so section bg:transparent cannot win) */
 .services-editorial {
-  background-color: #e7ecef;
+  background-color: var(--pjr-tan);
   background-image:
-    radial-gradient(900px 420px at 0% 0%, rgba(190, 199, 208, 0.35), transparent 58%),
-    radial-gradient(700px 380px at 100% 8%, rgba(55, 66, 77, 0.06), transparent 55%);
+    radial-gradient(900px 420px at 0% 0%, rgba(255, 255, 255, 0.32), transparent 58%),
+    radial-gradient(700px 380px at 100% 8%, rgba(55, 66, 77, 0.05), transparent 55%);
 }
 
 .services-stat {
@@ -354,7 +354,7 @@ footer.bg-brand-ink {
 
 .service-col:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px #eef1f3, 0 0 0 4px #37424d;
+  box-shadow: 0 0 0 2px var(--pjr-tan), 0 0 0 4px #37424d;
 }
 
 .service-col h3 {
