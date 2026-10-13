@@ -12,6 +12,13 @@ export default {
     const url = new URL(request.url);
     const { pathname } = url;
 
+    // 0. Named aliases
+    if (pathname === '/improve-your-census' || pathname === '/improve-your-census.html') {
+      const canonical = new URL(request.url);
+      canonical.pathname = '/census';
+      return Response.redirect(canonical.href, 301);
+    }
+
     // 1. Remove trailing slash and redirect (except root /)
     if (pathname.length > 1 && pathname.endsWith('/')) {
       const canonical = new URL(request.url);

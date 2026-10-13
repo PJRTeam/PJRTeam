@@ -5,6 +5,7 @@
   --pjr-blue: #37424d; /* Cascade — tumbler navy */
   --pjr-blue-hover: #2c3640;
   --pjr-blue-mist: #bec7d0;
+  --pjr-tan: #d8d3cb; /* Warm stone — brand sand/tan fills */
   --pjr-gold: #b8956a;
   --pjr-line: rgba(28, 28, 28, 0.08);
 }
@@ -15,6 +16,28 @@
   -webkit-backdrop-filter: blur(18px) saturate(1.1);
   border-bottom: 1px solid var(--pjr-line) !important;
   box-shadow: none !important;
+}
+
+/* Desktop dropdowns stay out of the header row until hover/focus */
+@media (min-width: 768px) {
+  .site-header nav[aria-label="Primary"] > .group {
+    position: relative;
+  }
+  .site-header nav[aria-label="Primary"] > .group > div.pointer-events-none {
+    position: absolute !important;
+    left: 0;
+    top: 100%;
+    z-index: 50;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .site-header nav[aria-label="Primary"] > .group:hover > div.pointer-events-none,
+  .site-header nav[aria-label="Primary"] > .group:focus-within > div.pointer-events-none {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
 }
 
 .nav-toggle {
@@ -51,6 +74,19 @@
 .mobile-panel.is-open {
   display: grid;
   gap: 0.1rem;
+}
+
+.mobile-nav-label {
+  margin: 0.5rem 0.85rem 0.05rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6f6a64;
+}
+
+.mobile-nav-label:first-child {
+  margin-top: 0.15rem;
 }
 
 .mobile-panel a {

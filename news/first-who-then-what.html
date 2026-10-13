@@ -171,7 +171,7 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="/public/css/site.css" />
+    <link rel="stylesheet" href="/public/css/site.css?v=nav" />
   </head>
   <body class="min-h-screen bg-white">
     <a
@@ -199,14 +199,44 @@
           />
         </a>
         <nav aria-label="Primary" class="hidden flex-wrap items-center justify-end gap-x-6 gap-y-2 md:flex lg:gap-x-8">
-          <a
-            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
-            href="/#about"
-            >About</a>
-          <a
-            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
-            href="/mission"
-            >Mission</a>
+          <div class="group relative">
+            <a
+              class="inline-flex cursor-pointer items-center gap-0.5 rounded text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2"
+              href="/#about"
+            >
+              About
+              <svg
+                class="h-4 w-4 shrink-0 text-brand-ink/60 transition-transform group-hover:rotate-180 group-focus-within:rotate-180"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+            <div
+              class="pointer-events-none absolute left-0 top-full z-50 pt-2 opacity-0 invisible transition duration-150 group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100"
+            >
+              <div class="min-w-[12rem] rounded-xl border border-brand-taupe/20 bg-white py-2 shadow-card">
+                <a
+                  class="block px-4 py-2 text-sm font-medium text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-blue"
+                  href="/#about"
+                  >About</a>
+                <a
+                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-blue"
+                  href="/founder"
+                  >Founder</a>
+                <a
+                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-blue"
+                  href="/mission"
+                  >Mission</a>
+              </div>
+            </div>
+          </div>
           <div class="group relative">
             <a
               class="inline-flex cursor-pointer items-center gap-0.5 rounded text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2"
@@ -254,13 +284,13 @@
                   class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-blue"
                   href="/services/technology-security"
                   >Technology &amp; security</a>
+                <a
+                  class="block px-4 py-2 text-sm text-brand-ink hover:bg-brand-mist focus:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-blue"
+                  href="/training"
+                  >Training</a>
               </div>
             </div>
           </div>
-          <a
-            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
-            href="/training"
-            >Training</a>
           <a
             class="cursor-pointer text-sm font-semibold text-brand-ink"
             href="/news/"
@@ -274,6 +304,10 @@
             class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
             href="/#testimonials"
             >Results</a>
+          <a
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
+            href="/census"
+            >Improve Your Census</a>
           <a
             class="cursor-pointer rounded-full bg-brand-blue px-4 py-2 text-sm font-semibold text-white shadow-soft transition hover:bg-brand-blueHover focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2"
             href="/#contact"
@@ -293,10 +327,20 @@
         </button>
       </div>
       <div id="mobile-panel" class="mobile-panel" hidden>
+          <p class="mobile-nav-label">About</p>
+          <a
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
+            href="/#about"
+            >About</a>
+          <a
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
+            href="/founder"
+            >Founder</a>
           <a
             class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
             href="/mission"
             >Mission</a>
+          <p class="mobile-nav-label">Services</p>
           <a
             class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
             href="/services/"
@@ -310,6 +354,10 @@
             href="/news/"
             aria-current="page"
             >News</a>
+          <a
+            class="cursor-pointer text-sm font-medium text-brand-ink transition-colors hover:text-brand-blue"
+            href="/census"
+            >Improve Your Census</a>
           <a
             class="cursor-pointer mobile-cta rounded-full bg-brand-blue px-3 py-2 text-sm font-semibold text-white transition hover:bg-brand-blueHover focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue"
             href="/#contact"
@@ -551,6 +599,8 @@
           </p>
           <p class="mt-3 text-sm text-white/60">
             <a class="font-medium text-brand-blueMist underline-offset-4 transition hover:text-white hover:underline" href="/">Home</a>
+            <span class="mx-2 text-white/40" aria-hidden="true">·</span>
+            <a class="font-medium text-brand-blueMist underline-offset-4 transition hover:text-white hover:underline" href="/founder">Founder</a>
             <span class="mx-2 text-white/40" aria-hidden="true">·</span>
             <a class="font-medium text-brand-blueMist underline-offset-4 transition hover:text-white hover:underline" href="/training">Training</a>
             <span class="mx-2 text-white/40" aria-hidden="true">·</span>

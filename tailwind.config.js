@@ -19,6 +19,7 @@ export default {
           paper: "#FFFFFF",
           stone: "#F5F3F0",
           sage: "#C4C7B5",
+          tan: "#D8D3CB",
           blue: "#37424D",
           blueHover: "#2C3640",
           blueMist: "#BEC7D0",

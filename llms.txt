@@ -7,6 +7,7 @@ PJR Team helps healthcare leaders control their digital front door: who has acce
 ## Priority pages
 
 - [Home](https://www.pjrteam.com/): Healthcare digital governance, reputation, and web partnership overview
+- [Improve Your Census](https://www.pjrteam.com/census): How reviews, search, and staff turnover cost skilled nursing admissions — free census check
 - [Services](https://www.pjrteam.com/services): Full service overview for operators
 - [Digital governance & social](https://www.pjrteam.com/services/digital-governance): Social media governance, access control, and HIPAA-aware publishing for healthcare
 - [Reputation & risk](https://www.pjrteam.com/services/reputation-risk): Google reviews, online reputation, and risk response for SNF and senior living

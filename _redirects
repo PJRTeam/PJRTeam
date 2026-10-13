@@ -1,4 +1,7 @@
 # Netlify (publish root = repo root): serve *.html at extensionless paths
+/improve-your-census    /census    301
+/census    /census.html    200
+/privacy    /privacy.html    200
 /services    /services/index.html    200
 /founder    /founder.html    200
 /mission    /mission.html    200

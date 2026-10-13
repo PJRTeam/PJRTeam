@@ -22,10 +22,42 @@ _PUBLIC_AT_ROOT = {
     "/founder-photo.jpg": "founder-photo.jpg",
 }
 
+_REDIRECTS = {
+    "/improve-your-census": "/census",
+    "/improve-your-census.html": "/census",
+}
+
 
 class Handler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=ROOT, **kwargs)
+
+    def _redirect_if_needed(self):
+        parsed = urllib.parse.urlparse(self.path)
+        clean = urllib.parse.unquote(parsed.path.split("?", 1)[0].split("#", 1)[0])
+        dest = _REDIRECTS.get(clean)
+        if not dest:
+            return False
+        if parsed.query:
+            dest = dest + "?" + parsed.query
+        self.send_response(301)
+        self.send_header("Location", dest)
+        self.end_headers()
+        return True
+
+    def do_GET(self):
+        if self._redirect_if_needed():
+            return
+        return super().do_GET()
+
+    def do_HEAD(self):
+        if self._redirect_if_needed():
+            return
+        return super().do_HEAD()
+
+    def end_headers(self):
+        self.send_header("Cache-Control", "no-store")
+        super().end_headers()
 
     def translate_path(self, path):
         parsed = urllib.parse.urlparse(path)

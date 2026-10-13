@@ -56,7 +56,7 @@
         if (formStatus) {
           formStatus.textContent =
             "Please complete first name, company, and email so we can respond.";
-          formStatus.classList.remove("hidden", "text-emerald-800");
+          formStatus.classList.remove("hidden", "text-brand-ink");
           formStatus.classList.add("text-red-800");
         }
         return;
@@ -71,7 +71,7 @@
         if (formStatus) {
           formStatus.textContent =
             "Form is not configured yet. Email us at ContactUs@pjrteam.com and we'll respond within one business day.";
-          formStatus.classList.remove("hidden", "text-emerald-800");
+          formStatus.classList.remove("hidden", "text-brand-ink");
           formStatus.classList.add("text-red-800");
         }
         return;
@@ -105,14 +105,14 @@
             formStatus.textContent =
               "Thank you — we received your message and will reply within one business day.";
             formStatus.classList.remove("hidden", "text-red-800");
-            formStatus.classList.add("text-emerald-800");
+            formStatus.classList.add("text-brand-ink");
           }
         })
         .catch(function () {
           if (formStatus) {
             formStatus.textContent =
               "Something went wrong. Please email ContactUs@pjrteam.com directly.";
-            formStatus.classList.remove("hidden", "text-emerald-800");
+            formStatus.classList.remove("hidden", "text-brand-ink");
             formStatus.classList.add("text-red-800");
           }
         })
@@ -120,6 +120,125 @@
           if (submitBtn) {
             submitBtn.disabled = false;
             submitBtn.textContent = "Submit";
+          }
+        });
+    });
+  }
+
+  var censusForm = document.getElementById("census-form");
+  var censusStatus = document.getElementById("census-form-status");
+  var censusBtn = censusForm ? censusForm.querySelector('button[type="submit"]') : null;
+  var emailOk = function (value) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+  };
+
+  if (censusForm) {
+    censusForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var fd = new FormData(censusForm);
+      if (String(fd.get("website") || "").trim()) {
+        if (censusStatus) {
+          censusStatus.textContent =
+            "Got it. We're pulling your facility's data now and will reach out within one business day to book your 20-minute walkthrough.";
+          censusStatus.classList.remove("hidden", "text-red-800");
+          censusStatus.classList.add("text-brand-ink");
+        }
+        censusForm.reset();
+        return;
+      }
+
+      var name = String(fd.get("name") || "").trim();
+      var role = String(fd.get("role") || "").trim();
+      var facility = String(fd.get("facilityName") || "").trim();
+      var state = String(fd.get("state") || "").trim();
+      var email = String(fd.get("email") || "").trim();
+
+      if (!name || !role || !facility || !state || !email) {
+        if (censusStatus) {
+          censusStatus.textContent =
+            "Please complete your name, role, facility name, state, and email.";
+          censusStatus.classList.remove("hidden", "text-brand-ink");
+          censusStatus.classList.add("text-red-800");
+        }
+        var firstMissing = !name
+          ? "census-name"
+          : !role
+            ? "census-role"
+            : !facility
+              ? "census-facility"
+              : !state
+                ? "census-state"
+                : "census-email";
+        var missingEl = document.getElementById(firstMissing);
+        if (missingEl) missingEl.focus();
+        return;
+      }
+
+      if (!emailOk(email)) {
+        if (censusStatus) {
+          censusStatus.textContent =
+            "Please enter a valid email address (e.g., you@organization.com).";
+          censusStatus.classList.remove("hidden", "text-brand-ink");
+          censusStatus.classList.add("text-red-800");
+        }
+        var emailEl = document.getElementById("census-email");
+        if (emailEl) emailEl.focus();
+        return;
+      }
+
+      var endpoint =
+        censusForm.getAttribute("data-formspree-endpoint") ||
+        censusForm.getAttribute("action") ||
+        "";
+
+      if (!endpoint || endpoint.indexOf("xpjrteam") !== -1) {
+        if (censusStatus) {
+          censusStatus.textContent =
+            "Form is not configured yet. Email us at ContactUs@pjrteam.com and we'll respond within one business day.";
+          censusStatus.classList.remove("hidden", "text-brand-ink");
+          censusStatus.classList.add("text-red-800");
+        }
+        return;
+      }
+
+      fd.set("_subject", "Census check request from " + facility);
+      fd.set("_replyto", email);
+
+      if (censusBtn) {
+        censusBtn.disabled = true;
+        censusBtn.textContent = "Sending…";
+      }
+
+      fetch(endpoint, {
+        method: "POST",
+        body: fd,
+        headers: { Accept: "application/json" },
+      })
+        .then(function (res) {
+          if (!res.ok) throw new Error("submit failed");
+          censusForm.reset();
+          if (censusStatus) {
+            censusStatus.textContent =
+              "Got it. We're pulling your facility's data now and will reach out within one business day to book your 20-minute walkthrough.";
+            censusStatus.classList.remove("hidden", "text-red-800");
+            censusStatus.classList.add("text-brand-ink");
+          }
+          if (typeof window.gtag === "function") {
+            window.gtag("event", "census_check_submit");
+          }
+        })
+        .catch(function () {
+          if (censusStatus) {
+            censusStatus.textContent =
+              "Something went wrong. Please email ContactUs@pjrteam.com directly.";
+            censusStatus.classList.remove("hidden", "text-brand-ink");
+            censusStatus.classList.add("text-red-800");
+          }
+        })
+        .finally(function () {
+          if (censusBtn) {
+            censusBtn.disabled = false;
+            censusBtn.textContent = "Get my free census check";
           }
         });
     });

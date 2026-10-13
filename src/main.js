@@ -33,7 +33,7 @@ if (form) {
       if (formStatus) {
         formStatus.textContent =
           "Please complete first name, company, and email so we can respond.";
-        formStatus.classList.remove("hidden", "text-emerald-800");
+        formStatus.classList.remove("hidden", "text-brand-ink");
         formStatus.classList.add("text-red-800");
       }
       return;
@@ -45,7 +45,7 @@ if (form) {
       formStatus.textContent =
         "Your email app should open with your message. If nothing opens, email us at ContactUs@pjrteam.com.";
       formStatus.classList.remove("hidden", "text-red-800");
-      formStatus.classList.add("text-emerald-800");
+      formStatus.classList.add("text-brand-ink");
     }
   });
 }
