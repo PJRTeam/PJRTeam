@@ -11,6 +11,7 @@ PJR Team helps healthcare leaders control their digital front door: who has acce
 - [Services](https://www.pjrteam.com/services): Full service overview for operators
 - [Digital governance & social](https://www.pjrteam.com/services/digital-governance): Social media governance, access control, and HIPAA-aware publishing for healthcare
 - [Reputation & risk](https://www.pjrteam.com/services/reputation-risk): Google reviews, online reputation, and risk response for SNF and senior living
+- [Facility Dashboards & Smart Workflows](https://www.pjrteam.com/services/facility-dashboards): A dedicated login for each facility, with its assets in one place, organized and available for use, plus AI-assisted review responses that are always approved by a PJR specialist and screened for HIPAA before they post.
 - [Websites & digital foundations](https://www.pjrteam.com/services/websites-digital-foundations): Healthcare website rebrands and digital foundations
 - [Technology & security](https://www.pjrteam.com/services/technology-security): Technology oversight and security for healthcare digital presence
 - [Partnership & support](https://www.pjrteam.com/services/partnership-support): Ongoing digital partnership and support

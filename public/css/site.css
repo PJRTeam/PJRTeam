@@ -423,7 +423,7 @@ footer.bg-brand-ink {
 
 @media (min-width: 1100px) {
   .services-cols {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem 1.5rem;
   }
 }
