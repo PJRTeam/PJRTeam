@@ -52,21 +52,21 @@
           extend: {
             colors: {
               brand: {
-                ink: "#1C1C1C",
+                ink: "#111111",
                 slate: "#454545",
-                black: "#1C1C1C",
+                black: "#111111",
                 paper: "#FFFFFF",
                 stone: "#F5F3F0",
                 sage: "#C4C7B5",
                 tan: "#D8D3CB",
-                blue: "#37424D",
-                blueHover: "#2C3640",
+                blue: "#111111",
+                blueHover: "#2A2A2A",
                 blueMist: "#BEC7D0",
                 taupe: "#E5E1DA",
                 rose: "#E5E1DA",
-                roseDeep: "#1C1C1C",
+                roseDeep: "#111111",
                 mist: "#FAFAF9",
-                accent: "#1C1C1C",
+                accent: "#111111",
                 accentMuted: "#F0EFEC",
               },
             },
@@ -87,9 +87,9 @@
             },
             backgroundImage: {
               "wash-light":
-                "radial-gradient(1200px 600px at 10% -10%, rgba(55, 66, 77, 0.08), transparent 55%), radial-gradient(900px 500px at 90% 0%, rgba(190, 199, 208, 0.38), transparent 52%), linear-gradient(180deg, #FFFFFF 0%, #FAFAF9 100%)",
+                "radial-gradient(1200px 600px at 10% -10%, rgba(17, 17, 17, 0.08), transparent 55%), radial-gradient(900px 500px at 90% 0%, rgba(190, 199, 208, 0.38), transparent 52%), linear-gradient(180deg, #FFFFFF 0%, #FAFAF9 100%)",
               "wash-hero":
-                "radial-gradient(ellipse 90% 70% at 50% -30%, rgba(55, 66, 77, 0.10), transparent 60%), radial-gradient(ellipse 50% 40% at 100% 20%, rgba(190, 199, 208, 0.28), transparent 50%), linear-gradient(180deg, #FFFFFF 0%, #F8F7F5 100%)",
+                "radial-gradient(ellipse 90% 70% at 50% -30%, rgba(17, 17, 17, 0.10), transparent 60%), radial-gradient(ellipse 50% 40% at 100% 20%, rgba(190, 199, 208, 0.28), transparent 50%), linear-gradient(180deg, #FFFFFF 0%, #F8F7F5 100%)",
             },
             transitionDuration: {
               DEFAULT: "220ms",
@@ -128,7 +128,7 @@
         max-width: 65ch;
       }
       main .text-flow a:not([class*="inline-flex"]):not([class*="rounded-full"]) {
-        color: #37424D;
+        color: #111111;
         text-decoration: underline;
         text-underline-offset: 0.2em;
         text-decoration-thickness: 1px;
@@ -143,7 +143,7 @@
         }
       }
       main section.census-proof-band {
-        background-color: #37424d;
+        background-color: #111111;
       }
       @keyframes clients-scroll {
         from {
@@ -361,7 +361,7 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="/public/css/site.css?v=nav" />
+    <link rel="stylesheet" href="/public/css/site.css?v=svccards" />
   </head>
   <body class="min-h-screen bg-white">
     <a
@@ -586,7 +586,7 @@
           class="hero-stage__content text-flow mx-auto w-full max-w-6xl px-4 pt-16 sm:px-6 lg:px-8 lg:pt-20"
         >
           <p
-            class="mb-3 inline-flex items-center gap-2 rounded-full border border-brand-blueMist/45 bg-brand-blue/50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white shadow-sm backdrop-blur-sm"
+            class="mb-3 inline-flex items-center gap-2 rounded-sm border border-brand-blueMist bg-brand-tan px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-ink"
           >
             <span class="h-1.5 w-1.5 rounded-full bg-brand-blueMist" aria-hidden="true"></span>
             Built for healthcare organizations
@@ -624,7 +624,7 @@
 
       <div class="hero-stats px-4 sm:px-6 lg:px-8">
         <dl
-          class="mx-auto grid max-w-6xl gap-px overflow-hidden rounded-2xl border border-brand-blue/15 border-t-2 border-t-brand-blue bg-brand-tan shadow-card sm:grid-cols-2 lg:grid-cols-4"
+          class="mx-auto grid max-w-6xl gap-px overflow-hidden rounded-2xl border border-brand-blueMist/80 border-t border-t-brand-ink bg-brand-tan shadow-card sm:grid-cols-2 lg:grid-cols-4"
           aria-label="Highlights"
         >
           <div class="bg-white p-5 sm:p-6">
@@ -668,30 +668,37 @@
 
       <section
         id="standard"
-        class="bg-brand-ink pt-16 text-white sm:pt-20"
+        class="standard-band"
         aria-labelledby="standard-heading"
       >
-        <div class="mx-auto flex max-w-6xl flex-col gap-6 px-4 pb-10 sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:pb-12 lg:px-8">
-          <div class="max-w-3xl">
+        <div class="standard-band__media" aria-hidden="true">
+          <img
+            src="/public/images/work-access.jpg"
+            alt=""
+            width="2000"
+            height="1125"
+          />
+        </div>
+        <div class="standard-band__shade" aria-hidden="true"></div>
+        <div class="standard-band__inner mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:gap-8 sm:px-6 sm:py-5 lg:px-8">
+          <div class="min-w-0 max-w-3xl">
             <h2
               id="standard-heading"
-              class="font-display text-2xl font-semibold tracking-tight text-white sm:text-3xl"
+              class="font-display text-lg font-semibold tracking-tight text-white sm:text-xl"
             >
               The Digital Media Governance Standard, v1.0
             </h2>
-            <p class="mt-3 text-base leading-relaxed text-white/80 sm:text-lg">
+            <p class="mt-1 text-sm leading-snug text-white/85">
               Training and documentation for facilities where staff carry phones into resident rooms.
               Three tiers, quarterly updates, a training record you can hand a surveyor.
             </p>
           </div>
           <a
             href="/training"
-            class="inline-flex shrink-0 cursor-pointer items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand-blue shadow-soft transition hover:bg-brand-mist focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-ink"
+            class="inline-flex min-h-11 shrink-0 cursor-pointer items-center justify-center rounded-sm bg-brand-blueMist px-5 py-2 text-sm font-semibold text-brand-ink transition hover:bg-[#A8B3BE] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-ink"
             >See the Standard</a>
         </div>
       </section>
-
-      <div class="h-px bg-gradient-to-r from-transparent via-brand-taupe/25 to-transparent" aria-hidden="true"></div>
 
       <section
         id="problems"
@@ -702,7 +709,7 @@
           <div class="grid items-start gap-10 lg:grid-cols-12 lg:gap-14">
             <div class="lg:col-span-7">
           <div class="text-flow max-w-3xl">
-            <p class="inline-flex rounded-full bg-brand-blue/10 px-3 py-1 text-sm font-semibold uppercase tracking-wider text-brand-blue">
+            <p class="inline-flex rounded-sm border border-brand-blueMist/80 bg-brand-tan px-3 py-1 text-sm font-semibold uppercase tracking-wider text-brand-ink">
               Sound familiar?
             </p>
             <h2
@@ -786,7 +793,7 @@
         <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
           <div class="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
             <div class="text-flow">
-            <p class="inline-flex rounded-full bg-brand-blue/10 px-3 py-1 text-sm font-semibold uppercase tracking-wider text-brand-blue">
+            <p class="inline-flex rounded-sm border border-brand-blueMist/80 bg-brand-tan px-3 py-1 text-sm font-semibold uppercase tracking-wider text-brand-ink">
               Who we are
             </p>
             <h2
@@ -839,7 +846,7 @@
             >
               <div class="flex items-start gap-4">
                 <div
-                  class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-blue/35 text-brand-ink"
+                  class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-tan text-brand-ink"
                   aria-hidden="true"
                 >
                   <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none">
@@ -907,7 +914,7 @@
             >
               <div class="flex items-start gap-4">
                 <div
-                  class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-blue/35 text-brand-ink"
+                  class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-tan text-brand-ink"
                   aria-hidden="true"
                 >
                   <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none">
@@ -1045,7 +1052,7 @@
             One partner for web, social, reputation, and technology. Clear ownership. No surprises.
           </p>
 
-          <div class="mt-12 rounded-2xl border-t-2 border-t-brand-blue bg-brand-ink px-6 py-8 text-center sm:px-10">
+          <div class="mt-12 rounded-2xl border-t border-t-brand-ink bg-brand-ink px-6 py-8 text-center sm:px-10">
             <p class="font-display text-xl font-semibold text-white sm:text-2xl">
               Not sure where you stand? Find out in 20 minutes.
             </p>
@@ -1069,7 +1076,7 @@
       >
         <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
           <div class="mx-auto max-w-3xl text-center">
-            <p class="inline-flex rounded-full bg-brand-blue/10 px-3 py-1 text-sm font-semibold uppercase tracking-wider text-brand-blue">
+            <p class="inline-flex rounded-sm border border-brand-blueMist/80 bg-brand-tan px-3 py-1 text-sm font-semibold uppercase tracking-wider text-brand-ink">
               Trusted partners
             </p>
             <h2
@@ -1284,7 +1291,7 @@
       >
         <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         <div class="max-w-3xl">
-          <p class="inline-flex rounded-full bg-brand-blue/10 px-3 py-1 text-sm font-semibold uppercase tracking-wider text-brand-blue">
+          <p class="inline-flex rounded-sm border border-brand-blueMist/80 bg-brand-tan px-3 py-1 text-sm font-semibold uppercase tracking-wider text-brand-ink">
             Proof
           </p>
           <h2
@@ -1667,7 +1674,7 @@
         <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
           <div class="flex flex-wrap items-end justify-between gap-4">
             <div class="max-w-2xl">
-              <p class="inline-flex rounded-full bg-brand-blue/10 px-3 py-1 text-sm font-semibold uppercase tracking-wider text-brand-blue">
+              <p class="inline-flex rounded-sm border border-brand-blueMist/80 bg-brand-tan px-3 py-1 text-sm font-semibold uppercase tracking-wider text-brand-ink">
                 Insights for operators
               </p>
               <h2
@@ -1766,7 +1773,7 @@
       >
         <div class="mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2 lg:px-8 lg:py-24">
           <div class="text-flow">
-            <p class="inline-flex rounded-full bg-brand-blue/10 px-3 py-1 text-sm font-semibold uppercase tracking-wider text-brand-blue">
+            <p class="inline-flex rounded-sm border border-brand-blueMist/80 bg-brand-tan px-3 py-1 text-sm font-semibold uppercase tracking-wider text-brand-ink">
               Contact
             </p>
             <h2
@@ -1901,7 +1908,7 @@
       >
         <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
           <div class="max-w-3xl">
-            <p class="inline-flex rounded-full bg-brand-blue/10 px-3 py-1 text-sm font-semibold uppercase tracking-wider text-brand-blue">FAQ</p>
+            <p class="inline-flex rounded-sm border border-brand-blueMist/80 bg-brand-tan px-3 py-1 text-sm font-semibold uppercase tracking-wider text-brand-ink">FAQ</p>
             <h2
               id="faq-heading"
               class="text-balance mt-2 font-display text-3xl font-semibold tracking-tight text-brand-ink sm:text-4xl"

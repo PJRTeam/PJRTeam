@@ -47,21 +47,21 @@
           extend: {
             colors: {
               brand: {
-                ink: "#1C1C1C",
+                ink: "#111111",
                 slate: "#454545",
-                black: "#1C1C1C",
+                black: "#111111",
                 paper: "#FFFFFF",
                 stone: "#F5F3F0",
                 sage: "#C4C7B5",
                 tan: "#D8D3CB",
-                blue: "#37424D",
-                blueHover: "#2C3640",
+                blue: "#111111",
+                blueHover: "#2A2A2A",
                 blueMist: "#BEC7D0",
                 taupe: "#E5E1DA",
                 rose: "#E5E1DA",
-                roseDeep: "#1C1C1C",
+                roseDeep: "#111111",
                 mist: "#FAFAF9",
-                accent: "#1C1C1C",
+                accent: "#111111",
                 accentMuted: "#F0EFEC",
               },
             },
@@ -82,9 +82,9 @@
             },
             backgroundImage: {
               "wash-light":
-                "radial-gradient(1200px 600px at 10% -10%, rgba(55, 66, 77, 0.08), transparent 55%), radial-gradient(900px 500px at 90% 0%, rgba(190, 199, 208, 0.38), transparent 52%), linear-gradient(180deg, #FFFFFF 0%, #FAFAF9 100%)",
+                "radial-gradient(1200px 600px at 10% -10%, rgba(17, 17, 17, 0.08), transparent 55%), radial-gradient(900px 500px at 90% 0%, rgba(190, 199, 208, 0.38), transparent 52%), linear-gradient(180deg, #FFFFFF 0%, #FAFAF9 100%)",
               "wash-hero":
-                "radial-gradient(ellipse 90% 70% at 50% -30%, rgba(55, 66, 77, 0.10), transparent 60%), radial-gradient(ellipse 50% 40% at 100% 20%, rgba(190, 199, 208, 0.28), transparent 50%), linear-gradient(180deg, #FFFFFF 0%, #F8F7F5 100%)",
+                "radial-gradient(ellipse 90% 70% at 50% -30%, rgba(17, 17, 17, 0.10), transparent 60%), radial-gradient(ellipse 50% 40% at 100% 20%, rgba(190, 199, 208, 0.28), transparent 50%), linear-gradient(180deg, #FFFFFF 0%, #F8F7F5 100%)",
             },
             transitionDuration: {
               DEFAULT: "220ms",
@@ -113,7 +113,7 @@
         max-width: 65ch;
       }
       .article-body a:not([class*="inline-flex"]):not([class*="rounded-full"]) {
-        color: #37424D;
+        color: #111111;
         text-decoration: underline;
         text-underline-offset: 0.2em;
         text-decoration-thickness: 1px;
@@ -172,7 +172,7 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="/public/css/site.css?v=nav" />
+    <link rel="stylesheet" href="/public/css/site.css?v=mistbtn" />
   </head>
   <body class="min-h-screen bg-white">
     <a
@@ -390,7 +390,7 @@
               </a>
             </p>
             <div class="flex flex-wrap items-center gap-3">
-              <span class="rounded-full bg-brand-blue/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-blue">
+              <span class="rounded-sm border border-brand-blueMist/80 bg-brand-tan px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-ink">
                 Census Signal
               </span>
               <time datetime="2026-08-01" class="text-sm text-brand-slate">August 2026</time>
@@ -537,7 +537,7 @@
 
           
           <div class="mt-10 border-t border-brand-taupe/20 pt-8">
-            <p class="inline-flex rounded-full bg-brand-blue/10 px-3 py-1 text-sm font-semibold uppercase tracking-wider text-brand-blue">Related services</p>
+            <p class="inline-flex rounded-sm border border-brand-blueMist/80 bg-brand-tan px-3 py-1 text-sm font-semibold uppercase tracking-wider text-brand-ink">Related services</p>
             <ul class="mt-4 space-y-2 text-base text-brand-slate">
               <li><a class="font-medium text-brand-ink underline-offset-4 hover:underline" href="/services/reputation-risk">Reputation &amp; risk management</a></li>
               <li><a class="font-medium text-brand-ink underline-offset-4 hover:underline" href="/services/digital-governance">Digital governance &amp; social management</a></li>
@@ -545,7 +545,7 @@
           </div>
 
           <div class="mt-12 rounded-2xl border border-brand-taupe/20 bg-brand-tan p-8 shadow-card">
-            <p class="inline-flex rounded-full bg-brand-blue/10 px-3 py-1 text-sm font-semibold uppercase tracking-wider text-brand-blue">PJR Team</p>
+            <p class="inline-flex rounded-sm border border-brand-blueMist/80 bg-brand-tan px-3 py-1 text-sm font-semibold uppercase tracking-wider text-brand-ink">PJR Team</p>
             <p class="mt-2 text-base leading-relaxed text-brand-slate">
               Digital governance and reputation management for skilled nursing and senior living
               operators&mdash;so the demand that&rsquo;s coming can find you, and trust what it finds.

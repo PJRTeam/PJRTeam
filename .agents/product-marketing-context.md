@@ -40,14 +40,13 @@ _(Add when researched.)_
 
 ## Brand colors (Tailwind `brand.*`)
 
-- **Charcoal** `#1C1C1C` — body, headers, structure (`ink`, `slate`)
-- **Black** `#000000` — primary buttons, strong emphasis (`black`, `accent`)
-- **Soft white** `#FAFAFA` — backgrounds, cards (`paper`)
-- **Warm stone** `#D8D3CB` — section bands, tinted surfaces (`stone`)
-- **Putty taupe** `#B8B2A6` — borders, dividers (`taupe`, legacy `rose`)
-- **Cascade** `#37424D` — primary CTAs, links, eyebrow labels, focus rings, highlights (`blue`; sampled from the matte navy tumbler)
-- **Cascade hover** `#2C3640` — darker Cascade for hover/pressed buttons (`blueHover`)
-- **Cascade mist** `#BEC7D0` — footer links and cool tints on dark surfaces (`blueMist`)
+- **Black** `#111111` — type, header/nav, primary CTAs, chrome (`ink`, `black`, `accent`, `blue`)
+- **Black hover** `#2A2A2A` — slightly lighter black for pressed/hover buttons (`blueHover`)
+- **White** `#FFFFFF` — page canvas (`paper`)
+- **Warm stone / tan** `#D8D3CB` — section bands, chips, tinted surfaces (`tan`, `stone`)
+- **Mist** `#BEC7D0` — hairlines, secondary chips, footer links, cool accents (`blueMist`)
+- **Slate** `#454545` — body copy on white/tan (`slate`)
+- **Putty taupe** `#E5E1DA` — quiet borders (`taupe`, legacy `rose`)
 - **Muted sage** `#C4C7B5` — retained as a secondary token (`sage`)
 
 ## Training product (`training.html`)

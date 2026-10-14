@@ -52,22 +52,22 @@
           extend: {
             colors: {
               brand: {
-                ink: "#1C1C1C",
-                slate: "#37424D",
-                black: "#1C1C1C",
-                paper: "#FAFAF9",
+                ink: "#111111",
+                slate: "#454545",
+                black: "#111111",
+                paper: "#FFFFFF",
                 stone: "#F5F3F0",
                 sage: "#C4C7B5",
-                blue: "#37424D",
-                blueHover: "#2C3640",
+                blue: "#111111",
+                blueHover: "#2A2A2A",
                 blueMist: "#BEC7D0",
                 taupe: "#E5E1DA",
                 rose: "#E5E1DA",
-                roseDeep: "#1C1C1C",
+                roseDeep: "#111111",
                 mist: "#FAFAF9",
-                accent: "#1C1C1C",
+                accent: "#111111",
                 accentMuted: "#F0EFEC",
-                navy: "#0F2A3D",
+                navy: "#111111",
                 tan: "#D8D3CB",
                 loss: "#B4432C",
               },
@@ -205,7 +205,7 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="/public/css/site.css?v=nav" />
+    <link rel="stylesheet" href="/public/css/site.css?v=censusweb" />
   </head>
   <body class="min-h-screen bg-brand-paper font-sans text-brand-ink">
     <a
@@ -400,8 +400,19 @@
     </header>
 
     <main id="main">
-      <section class="bg-brand-navy text-white" aria-labelledby="census-hero-heading">
-        <div class="mx-auto grid max-w-6xl items-start gap-10 px-4 pb-16 pt-12 sm:px-6 sm:pb-20 sm:pt-16 lg:grid-cols-12 lg:gap-14 lg:px-8 lg:pb-24 lg:pt-20">
+      <section class="census-hero text-white" aria-labelledby="census-hero-heading">
+        <div class="census-hero__media" aria-hidden="true">
+          <img
+            src="/public/images/work-website.jpg"
+            alt=""
+            width="2000"
+            height="1125"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+        <div class="census-hero__shade" aria-hidden="true"></div>
+        <div class="census-hero__inner mx-auto grid max-w-6xl items-start gap-10 px-4 pb-16 pt-12 sm:px-6 sm:pb-20 sm:pt-16 lg:grid-cols-12 lg:gap-14 lg:px-8 lg:pb-24 lg:pt-20">
           <div class="lg:col-span-7">
             <p class="inline-flex items-center rounded-full border border-brand-tan/40 bg-white/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-tan">
               Let's improve your census
@@ -422,7 +433,7 @@
                 >Get my free census check</a>
               <a
                 href="#the-math"
-                class="inline-flex min-h-11 cursor-pointer items-center justify-center rounded-full px-2 py-3 text-sm font-semibold text-brand-tan underline-offset-4 transition hover:text-white hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-tan"
+                class="inline-flex min-h-11 cursor-pointer items-center justify-center rounded-full border border-brand-blueMist bg-brand-blueMist px-6 py-3 text-sm font-semibold text-brand-ink transition hover:bg-[#A8B3BE] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-ink"
                 >See the math</a>
             </div>
           </div>
